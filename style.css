@@ -9,6 +9,7 @@
 :root {
   --top-padding: 2em;
   --bottom-padding: 2em;
+  --primary-color: #3F729B;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -38,6 +39,8 @@ main {
 header {
   padding-top: var(--top-padding);
   padding-bottom: var(--bottom-padding);
+  position: sticky;
+  border-bottom: 2px solid var(--primary-color);
 }
 
 nav {
