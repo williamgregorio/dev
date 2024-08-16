@@ -230,7 +230,12 @@ ul li {
     margin-left: 10%;
     margin-right: 10%;
   }
+}
 
+@media (max-width: 598px) {
+  #skill-list {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /*Mobile*/
