@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --top-padding: 2em;
+  --bottom-padding: 2em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  margin-left: 12em;
+  margin-right: 12em;
+
+}
+
+header {
+  padding-top: var(--top-padding);
+  padding-bottom: var(--bottom-padding);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > a img {
+  width: 42px;
+  align-content: flex-end;
+}
+
+ul {
+  display: flex;
+  gap: 16px;
+}
+
+ul li {
+  list-style: none;
+  align-content: flex-end;
+}
