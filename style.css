@@ -31,8 +31,8 @@ a {
 }
 
 main {
-  margin-left: 12em;
-  margin-right: 12em;
+  margin-left: 24%;
+  margin-right: 24%;
 
 }
 
@@ -40,7 +40,6 @@ header {
   padding-top: var(--top-padding);
   padding-bottom: var(--bottom-padding);
   position: sticky;
-  border-bottom: 2px solid var(--primary-color);
 }
 
 nav {
@@ -53,6 +52,9 @@ nav > a img {
   align-content: flex-end;
 }
 
+nav ul > li a {
+  font-weight: 600;
+}
 ul {
   display: flex;
   gap: 16px;
@@ -62,3 +64,21 @@ ul li {
   list-style: none;
   align-content: flex-end;
 }
+
+
+
+/*Tablet*/
+@media (max-width: 768px) {
+  main {
+    margin-left: 14%;
+    margin-right: 14%;
+  }
+}
+
+/*Mobile*/
+@media (max-width: 480px) {
+  main {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
