@@ -31,16 +31,19 @@ skills.forEach(skill => {
 // Scroll to section "make easier to not write to much"
 const skillsSection = document.querySelector("#skills");
 const skillsAnchor = document.querySelector("#scroll-to-skills");
+const aboutSection = document.querySelector("#about");
+const aboutAnchor = document.querySelector("#scroll-to-about");
 
-skillsAnchor.addEventListener("click", (e) => {
-  e.preventDefault();
-  skillsSection.scrollIntoView({behavior: "smooth"});
-})
+function scrollUser(anchor, section) {
+  anchor.addEventListener("click", (e) => {
+    e.preventDefault();
+    section.scrollIntoView({behavior: "smooth"});
+  })
+}
 
+scrollUser(skillsAnchor, skillsSection);
+scrollUser(aboutAnchor, aboutSection);
 
-
-
-// On initial scroll background change
 document.addEventListener("scroll", () => {
   const header = document.querySelector("header");
   let scrollPosition = window.scrollY;
@@ -50,4 +53,4 @@ document.addEventListener("scroll", () => {
   } else {
     header.classList.remove("scrolled");
   }
-})
+});
