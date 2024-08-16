@@ -45,7 +45,7 @@ body {
 }
 
 section {
-  margin-top: 2em;
+  margin-top: 10%;
 }
 
 a {
@@ -94,7 +94,11 @@ main {
 header {
   padding-top: var(--top-padding);
   padding-bottom: var(--bottom-padding);
+  transition: background-color 0.2s ease;
+  position: -webkit-sticky;
   position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 nav {
@@ -132,6 +136,12 @@ ul li {
   font-weight: bold;
   border-radius: var(--soft-radius);
   cursor: default;
+}
+
+.scrolled {
+  background-color: #FEFFFE;
+  box-shadow: 0px 4px 15px -16px rgba(0,0,0,0.1);
+  border-radius: var(--soft-radius);
 }
 
 /*Hero*/
@@ -173,6 +183,40 @@ ul li {
   gap: var(--text-gap);
 }
 
+/*Skills*/
+#skills {
+  display: flex;
+  flex-direction: column;
+  gap: var(--header-gap);
+}
+
+#skill-list {
+  display: grid;
+  gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.skill {
+  display: flex;
+  gap: var(--small-gap);
+  flex-direction: column-reverse;
+  justify-content: space-even;
+}
+
+.skill img {
+  max-width: 50%;
+}
+
+#skill-list .skill:nth-child(5) img, 
+#skill-list .skill:nth-child(6) img {
+  max-width: 90%;
+}
+
+#skill-list .skill:nth-child(5),
+#skill-list .skill:nth-child(6) {
+  justify-content: center;
+}
 /*Laptops*/
 @media (max-width: 1390px) {
   #hero {
