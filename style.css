@@ -230,6 +230,42 @@ ul li {
   justify-content: center;
 }
 
+/*Emails*/
+#emails {
+  display: flex;
+  flex-direction: column;
+  gap: var(--header-gap);
+}
+
+#email-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.email-card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--small-gap);
+}
+
+.email-card > a img{
+  border-radius: var(--soft-radius);
+  filter: grayscale(90%);
+  transition: filter 1.5s ease;
+}
+
+.email-card > a img:hover {
+  filter: grayscale(5%);
+  box-shadow: 0px 4px 15px -16px rgba(0,0,0,0.1);
+}
+
+.email-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--header-gap);
+}
+
 /*About*/
 #about {
   display: grid;
