@@ -28,11 +28,24 @@ skills.forEach(skill => {
 })
 
 
-// Scroll to section "make easier to not write to much"
+// Scroll to top
+const homeAnchor = document.querySelector("#scroll-to-top");
+homeAnchor.addEventListener("click", (e) => {
+  e.preventDefault();
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+
+// Scroll to section
 const skillsSection = document.querySelector("#skills");
 const skillsAnchor = document.querySelector("#scroll-to-skills");
 const aboutSection = document.querySelector("#about");
 const aboutAnchor = document.querySelector("#scroll-to-about");
+const emailsSection = document.querySelector("#emails");
+const emailsAnchor = document.querySelector(".scroll-to-emails");
+const secondEmailsAnchor = document.querySelector(".call-to-action .scroll-to-emails");
 
 function scrollUser(anchor, section) {
   anchor.addEventListener("click", (e) => {
@@ -43,6 +56,8 @@ function scrollUser(anchor, section) {
 
 scrollUser(skillsAnchor, skillsSection);
 scrollUser(aboutAnchor, aboutSection);
+scrollUser(emailsAnchor, emailsSection);
+scrollUser(secondEmailsAnchor, emailsSection);
 
 document.addEventListener("scroll", () => {
   const header = document.querySelector("header");
