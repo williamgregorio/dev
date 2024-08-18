@@ -57,7 +57,7 @@ body {
 }
 
 section {
-  margin-top: 16%;
+  margin-top: 7%;
   scroll-margin-top: 125px;
 }
 
@@ -158,6 +158,12 @@ ul li {
   border-radius: 0 0 var(--soft-radius) var(--soft-radius);
 
 } 
+
+nav a.active {
+  color: var(--primary-color);
+  text-decoration: underline;
+  font-weight: bold;
+}
 
 /*Hero*/
 #hero {
