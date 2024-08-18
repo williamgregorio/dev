@@ -216,7 +216,6 @@ nav a.active {
   display: grid;
   gap: 50px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .skill {
@@ -224,20 +223,21 @@ nav a.active {
   gap: var(--small-gap);
   flex-direction: column-reverse;
   justify-content: space-even;
+  border: 2px #eee solid;
+  padding: 8px;
+  border-radius: var(--soft-radius);
+  box-shadow: 0px 4px 15px -16px rgba(0,0,0,0.1);
+  text-align: center;
+  font-weight: bold;
 }
 
-.skill img {
-  max-width: 30%;
-}
-
-#skill-list .skill:nth-child(5) img, 
-#skill-list .skill:nth-child(6) img {
-  max-width: 60%;
-}
-
-#skill-list .skill:nth-child(5),
-#skill-list .skill:nth-child(6) {
-  justify-content: center;
+.skill-image {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100px;
+  width: auto;
+  object-fit: cover;
 }
 
 /*Emails*/
@@ -297,6 +297,7 @@ nav a.active {
   max-width: 60%;
   height: auto;
   border-radius: var(--soft-radius) 24px 32px 90px;
+  border: 2px #eee solid;
 }
 
 #about-content {
@@ -324,11 +325,15 @@ nav a.active {
   #about {
     grid-template-columns: 1fr;
   }
+
+  #skill-list {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 598px) {
   #skill-list {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   #email-list {
