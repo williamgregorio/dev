@@ -8,6 +8,9 @@ const skills = [
   {name:"Google AdWords", path:"googleads"},
   {name:"GA4", path:"google-analytics"},
   {name:"Figma", path:"figma"},
+  {name:"Salesforce", path:"salesforce"},
+  {name:"WordPress", path:"wordpress"},
+  {name:"Shopify", path:"shopify"}
 ]
 
 const emailTypes = {
