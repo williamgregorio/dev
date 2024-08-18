@@ -159,7 +159,6 @@ const observerCallback = (entries) => {
 const observer = new IntersectionObserver(observerCallback, observerOptions);
 
 document.querySelectorAll("section").forEach(section => {
-  console.log(section);
   observer.observe(section);
 })
 
