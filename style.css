@@ -238,15 +238,16 @@ ul li {
   display: flex;
   flex-direction: column;
   gap: var(--header-gap);
-  background-color: #f5f5f5;
-  border-radius: var(--soft-radius);
 }
 
 #email-list {
+  background-color: #f5f5f5;
+  border-radius: var(--soft-radius);
   padding: 12px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  box-shadow: 0px 4px 15px -16px rgba(0,0,0,0.1);
 }
 
 .email-card-meta {
@@ -256,7 +257,6 @@ ul li {
 }
 
 .email-image {
-  background-image: url("assets/katz-newsletter-portfolio.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;
@@ -306,6 +306,10 @@ ul li {
   #hero {
     grid-template-columns: 1fr;
   }
+
+  #email-list {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /*Tablets*/
@@ -317,10 +321,6 @@ ul li {
   
   #about {
     grid-template-columns: 1fr;
-  }
-
-  #email-list {
-    grid-template-columns: 1fr 1fr;
   }
 }
 
