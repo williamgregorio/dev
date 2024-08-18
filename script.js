@@ -57,7 +57,6 @@ function SkillCard(name, path) {
   imageSVGDiv.className += "skill-image";
 
   cardDiv.append(logoNameSpan,imageSVGDiv);
-  console.log(cardDiv);
   return cardDiv;
 }
 
@@ -169,4 +168,108 @@ const observer = new IntersectionObserver(observerCallback, observerOptions);
 document.querySelectorAll("section").forEach(section => {
   observer.observe(section);
 })
+
+/*
+READ ALOUD TIME
+2:03
+mins:secs
+SILENT READING TIME
+1:37
+mins:secs
+WORDS
+373
+CHARACTERS
+2362
+*/
+let timerStartTime;
+let timerRunning = false;
+let scrollCount = 0;
+const maxScrollCount = 2;
+let scrollTimes = [];
+let timerTimeout;
+
+function startTimer() {
+  if (!timerRunning) {
+    timerStartTime = new Date().getTime();
+    timerRunning = true;
+    console.log(`Starting timer cycle number: ${scrollCount + 1}`);
+    clearTimeout(timerTimeout);
+  }
+}
+
+function stopTimer() {
+  if (!timerRunning) return;
+
+  const timerEndTime = new Date().getTime();
+  const timeTaken = (timerEndTime - timerStartTime) / 1000;
+  console.log(`Time take to reach the bottom page: ${timeTaken} seconds`);
+
+  scrollTimes.push({
+    cycle: scrollCount + 1,
+    timeTaken: timeTaken
+  });
+
+  timerRunning = false;
+  scrollCount++;
+
+  if (scrollCount >= maxScrollCount) {
+    console.log("Maximum scroll count reached");
+    window.removeEventListener("scroll", checkUserScrollPosition);
+    showPopup();
+  } else {
+    console.log("Scroll back to top to start a new cycle");
+  }
+}
+
+function checkUserScrollPosition() {
+  const scrollTop = window.scrollY || window.pageYOffset;
+  const documentHeight = document.documentElement.scrollHeight;
+  const viewportHeight = window.innerHeight;
+
+  if (scrollTop + viewportHeight >= documentHeight) {
+    if (timerRunning) {
+      console.log(`Cycle number: ${scrollCount + 1}, touched bottom document`);
+      stopTimer();
+    }
+  } else if (scrollTop === 0) {
+    if (!timerRunning && scrollCount < maxScrollCount) {
+      console.log("User touched top of page, resetting timer.")
+      startTimer();
+    }
+  }
+}
+
+function showPopup() {
+  const popup = document.querySelector("#popup");
+  const popupXDiv = document.createElement("div");
+  popupXDiv.className += "close-popup";
+  const popupXIMG= document.createElement("img");
+  popupXIMG.className += "x-close";
+  popupXIMG.setAttribute("src", `assets/close-bold.svg`);
+  popupXDiv.append(popupXIMG);
+  popup.append(popupXDiv);
+  popup.style.display = "block";
+}
+
+function closePopup() {
+  document.querySelector("#popup").style.display = "none";
+}
+
+function handleNocrollUpTimeout() {
+  timerTimeout = setTimeout(() => {
+    if (!timerRunning) {
+      console.log("No scroll up detected after detected, displaying data");
+      showPopup();
+      window.removeEventListener("scroll", checkUserScrollPosition);
+    }
+  }, 10000)
+}
+
+function inititalizeScrollTracking() {
+  window.addEventListener("scroll", checkUserScrollPosition);
+  startTimer();
+  handleNocrollUpTimeout();
+}
+
+window.addEventListener("load", inititalizeScrollTracking);
 
