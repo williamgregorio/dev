@@ -10,6 +10,37 @@ const skills = [
   {name:"Figma", path:"figma"},
 ]
 
+const emailTypes = {
+  transactional: [
+    "Order Confirmation",
+    "Shipping Confirmation",
+    "Password Reset",
+    "Account Creation",
+    "Payment Receipt"
+  ],
+  promotional: [
+    "Product Announcements",
+    "Sales and Discounts",
+    "Newsletters",
+    "Event Invitations",
+    "Seasonal Campaigns"
+  ],
+  engagement: [
+    "Welcome Emails",
+    "Re-engagement Emails",
+    "Survey Requests"
+  ],
+  behavioral: [
+    "Abandoned Cart",
+    "Browse Abandonment",
+    "Product Recommendations"
+  ],
+  informational: [
+    "Company Updates",
+    "Educational Content"
+  ]
+};
+
 // "Card is to vague"
 function Card(name, path) {
   const cardDiv  = document.createElement("div");
@@ -51,6 +82,7 @@ const secondEmailsAnchor = document.querySelector(".call-to-action .scroll-to-em
 function scrollUser(anchor, section) {
   anchor.addEventListener("click", (e) => {
     e.preventDefault();
+    console.log(e.srcElement);
     section.scrollIntoView({behavior: "smooth", block: "start"});
   })
 }
@@ -74,7 +106,7 @@ document.addEventListener("scroll", () => {
 //Displays list of emails
 const emailListDiv = document.querySelector("#email-list");
 const emails = [
-  {type: "Newsletter", description: "RAW", imageFileName:"katz-newsletter-portfolio.png", filename: "katz-newsletter.html"}
+  {type: emailTypes.promotional[0], description: "A responsive promotional email for a new product announcement, written in pure HTML.", imageFileName:"katz-newsletter-portfolio.png", filename: "katz-newsletter.html"}
 ]
 
 function EmailCard(type,description,imageFileName,filename){
@@ -104,4 +136,3 @@ emails.forEach(email => {
 })
 
 
-//dynamic hero
