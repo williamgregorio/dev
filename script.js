@@ -80,7 +80,6 @@ const aboutSection = document.querySelector("#about");
 const aboutAnchor = document.querySelector("#scroll-to-about");
 const emailsSection = document.querySelector("#emails");
 const emailsAnchor = document.querySelector(".scroll-to-emails");
-const secondEmailsAnchor = document.querySelector(".call-to-action .scroll-to-emails");
 
 function scrollUser(anchor, section) {
   anchor.addEventListener("click", (e) => {
@@ -92,7 +91,6 @@ function scrollUser(anchor, section) {
 scrollUser(skillsAnchor, skillsSection);
 scrollUser(aboutAnchor, aboutSection);
 scrollUser(emailsAnchor, emailsSection);
-scrollUser(secondEmailsAnchor, emailsSection);
 
 document.addEventListener("scroll", () => {
   const header = document.querySelector("header");
