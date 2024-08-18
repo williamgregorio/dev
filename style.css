@@ -288,23 +288,16 @@ nav a.active {
 }
 
 /*About*/
-#about {
-  display: grid;
-  gap: 33px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: min-content 1fr;
-}
-
-#about div:nth-child(2) img {
-  max-width: 90%;
+#about-content img {
+  float: right;
+  margin: 0 0 1em 1em;
+  max-width: 60%;
   height: auto;
   border-radius: var(--soft-radius) 24px 32px 90px;
 }
 
 #about-content {
-  display: flex;
-  flex-direction: column;
-  gap: 33px;
+  overflow: hidden;
 }
 
 /*Laptops*/
