@@ -106,8 +106,8 @@ document.addEventListener("scroll", () => {
 //Displays list of emails
 const emailListDiv = document.querySelector("#email-list");
 const emails = [
-  {type: emailTypes.promotional[0], description: "A responsive payment  email for a new product announcement, written in pure HTML.", imageFileName:"katz-newsletter-portfolio.png", filename: "katz-promotional-product-announcement.html"},
-  {type: emailTypes.transactional[4], description: "A responsive payment receipt email for a new business written in pure HTML.", imageFileName:"stripe-first-transaction.png", filename: "stripe-transactional-payment-receipt.html"},
+  {type: emailTypes.promotional[0], description: "A responsive email for a new product announcement.", imageFileName:"katz-newsletter-portfolio.png", filename: "katz-promotional-product-announcement.html"},
+  {type: emailTypes.transactional[4], description: "A responsive new payment receipt email for a service business.", imageFileName:"stripe-first-transaction.png", filename: "stripe-transactional-payment-receipt.html"},
 ]
 
 function EmailCard(type,description,imageFileName,filename){
