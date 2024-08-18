@@ -265,11 +265,12 @@ nav a.active {
 
 .email-image {
   background-repeat: no-repeat;
+  border: 2px #eee solid;
   background-size: cover;
   height: 350px;
   border-radius: var(--soft-radius);
-  filter: grayscale(70%);
-  transition: filter 0.5s ease-in-out;
+  filter: grayscale(75%);
+  transition: filter 0.2s ease-in-out;
 }
 
 .email-image:hover {
@@ -281,7 +282,7 @@ nav a.active {
   display: flex;
   flex-direction: column;
   gap: var(--header-gap);
-  border: 1px #eee solid;
+  border: 2px #eee solid;
   padding: 12px;
   border-radius: var(--soft-radius);
   box-shadow: 0px 4px 15px -16px rgba(0,0,0,0.1);
