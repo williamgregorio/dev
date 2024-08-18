@@ -254,6 +254,7 @@ nav a.active {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   box-shadow: 0px 4px 15px -16px rgba(0,0,0,0.1);
+  gap: var(--small-gap);
 }
 
 .email-card-meta {
