@@ -61,12 +61,12 @@ skills.forEach(skill => {
 })
 
 // Scroll to top
-const homeAnchor = document.querySelector("#scroll-to-top");
-homeAnchor.addEventListener("click", (e) => {
+const heroAnchor = document.querySelector("#scroll-to-top");
+heroAnchor.addEventListener("click", (e) => {
   e.preventDefault();
   window.scrollTo({
     top: 0,
-    behavior: "smooth"
+    behavior: "instant"
   });
 });
 
@@ -82,8 +82,7 @@ const secondEmailsAnchor = document.querySelector(".call-to-action .scroll-to-em
 function scrollUser(anchor, section) {
   anchor.addEventListener("click", (e) => {
     e.preventDefault();
-    console.log(e.srcElement);
-    section.scrollIntoView({behavior: "smooth", block: "start"});
+    section.scrollIntoView({behavior: "instant", block: "start"});
   })
 }
 
@@ -135,4 +134,32 @@ emails.forEach(email => {
   emailListDiv.append(EmailCard(email.type, email.description, email.imageFileName, email.filename));
 })
 
+//active state evaluator
+const observerOptions = {
+  root: null,
+  rootMargin: '0px', 
+  threshold: 0.7
+}
+
+const sections = document.querySelectorAll("sections");
+
+const observerCallback = (entries) => {
+  entries.forEach(entry => {
+    const id = entry.target.getAttribute("id");
+    const navLink = document.querySelector(`nav a[href="#${id}"]`);
+
+    if (entry.isIntersecting) {
+      navLink.classList.add("active");
+    } else {
+      navLink.classList.remove("active");
+    }
+  });
+}
+
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+document.querySelectorAll("section").forEach(section => {
+  console.log(section);
+  observer.observe(section);
+})
 
