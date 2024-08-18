@@ -120,11 +120,11 @@ function EmailCard(type,description,imageFileName,filename){
 
   emailCardDiv.className += "email-card";
   emailCardMetaDiv.className += "email-card-meta";
-  let metaTypeParagraph = document.createElement("p");
-  metaTypeParagraph.textContent = `Type: ${type}`;
+  let metaTypeHeadingThree = document.createElement("h3");
+  metaTypeHeadingThree.textContent = `Type: ${type}`;
   let metaDescriptionParagraph = document.createElement("p");
   metaDescriptionParagraph.textContent = `Description: ${description}`;
-  emailCardMetaDiv.append(metaTypeParagraph,metaDescriptionParagraph);
+  emailCardMetaDiv.append(metaTypeHeadingThree,metaDescriptionParagraph);
 
   emailCardAnchorImage.setAttribute("target", "_blank");
   emailCardAnchorImage.setAttribute("href", `emails/${filename}`);
