@@ -44,14 +44,20 @@ const emailTypes = {
   ]
 };
 
-// "Card is to vague"
-function Card(name, path) {
+// Skill card dom rendering 
+function SkillCard(name, path) {
   const cardDiv  = document.createElement("div");
   cardDiv.setAttribute("class", "skill");
-  const imageSVG = document.createElement("img");
-  imageSVG.setAttribute("src", `assets/${path}.svg`);
-  imageSVG.setAttribute("alt", `${name} logo icon`);
-  cardDiv.append(imageSVG);
+  
+  const logoNameSpan = document.createElement("span");
+  logoNameSpan.textContent = name;
+
+  const imageSVGDiv = document.createElement("div");
+  imageSVGDiv.style.backgroundImage = `url("assets/${path}.svg")`;
+  imageSVGDiv.className += "skill-image";
+
+  cardDiv.append(logoNameSpan,imageSVGDiv);
+  console.log(cardDiv);
   return cardDiv;
 }
 
@@ -59,7 +65,7 @@ function Card(name, path) {
 const skillList = document.querySelector("#skill-list");
 
 skills.forEach(skill => {
-  skillList.append(Card(skill.name, skill.path))
+  skillList.append(SkillCard(skill.name, skill.path))
   return skillList;
 })
 
