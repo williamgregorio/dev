@@ -10,6 +10,7 @@ const skills = [
   {name:"Figma", path:"figma"},
 ]
 
+// "Card is to vague"
 function Card(name, path) {
   const cardDiv  = document.createElement("div");
   cardDiv.setAttribute("class", "skill");
@@ -20,13 +21,13 @@ function Card(name, path) {
   return cardDiv;
 }
 
+// Displays skills logo
 const skillList = document.querySelector("#skill-list");
 
 skills.forEach(skill => {
   skillList.append(Card(skill.name, skill.path))
   return skillList;
 })
-
 
 // Scroll to top
 const homeAnchor = document.querySelector("#scroll-to-top");
@@ -50,7 +51,7 @@ const secondEmailsAnchor = document.querySelector(".call-to-action .scroll-to-em
 function scrollUser(anchor, section) {
   anchor.addEventListener("click", (e) => {
     e.preventDefault();
-    section.scrollIntoView({behavior: "smooth"});
+    section.scrollIntoView({behavior: "smooth", block: "start"});
   })
 }
 
@@ -69,3 +70,38 @@ document.addEventListener("scroll", () => {
     header.classList.remove("scrolled");
   }
 });
+
+//Displays list of emails
+const emailListDiv = document.querySelector("#email-list");
+const emails = [
+  {type: "Newsletter", description: "RAW", imageFileName:"katz-newsletter-portfolio.png", filename: "katz-newsletter.html"}
+]
+
+function EmailCard(type,description,imageFileName,filename){
+  const rootPath = "assets";
+  let emailCardDiv = document.createElement("div");
+  let emailCardMetaDiv = document.createElement("div");
+  let emailCardAnchorImage = document.createElement("a");
+
+  emailCardDiv.className += "email-card";
+  emailCardMetaDiv.className += "email-card-meta";
+  let metaTypeParagraph = document.createElement("p");
+  metaTypeParagraph.textContent = `Type: ${type}`;
+  let metaDescriptionParagraph = document.createElement("p");
+  metaDescriptionParagraph.textContent = `Description: ${description}`;
+  emailCardMetaDiv.append(metaTypeParagraph,metaDescriptionParagraph);
+
+  emailCardAnchorImage.setAttribute("target", "_blank");
+  emailCardAnchorImage.setAttribute("href", `emails/${filename}`);
+  emailCardAnchorImage.className += "email-image";
+  emailCardAnchorImage.style.backgroundImage = `url("${rootPath}/${imageFileName}")`
+  emailCardDiv.append(emailCardMetaDiv,emailCardAnchorImage);
+  return emailCardDiv;
+}
+
+emails.forEach(email => {
+  emailListDiv.append(EmailCard(email.type, email.description, email.imageFileName, email.filename));
+})
+
+
+//dynamic hero
