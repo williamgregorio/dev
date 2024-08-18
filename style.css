@@ -57,7 +57,8 @@ body {
 }
 
 section {
-  margin-top: 10%;
+  margin-top: 16%;
+  scroll-margin-top: 24px;
 }
 
 a {
@@ -151,10 +152,12 @@ ul li {
 }
 
 .scrolled {
-  background-color: #FEFFFE;
+  background-color: #fff;
+  border-bottom: 1px #eee solid;
   box-shadow: 0px 4px 15px -16px rgba(0,0,0,0.1);
-  border-radius: var(--soft-radius);
-}
+  border-radius: 0 0 var(--soft-radius) var(--soft-radius);
+
+} 
 
 /*Hero*/
 #hero {
@@ -235,12 +238,15 @@ ul li {
   display: flex;
   flex-direction: column;
   gap: var(--header-gap);
+  background-color: #f5f5f5;
+  border-radius: var(--soft-radius);
 }
 
 #email-list {
+  padding: 12px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .email-card-meta {
@@ -249,13 +255,17 @@ ul li {
   gap: var(--small-gap);
 }
 
-.email-card > a img{
+.email-image {
+  background-image: url("assets/katz-newsletter-portfolio.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
   border-radius: var(--soft-radius);
-  filter: grayscale(90%);
-  transition: filter 1.5s ease;
+  filter: grayscale(70%);
+  transition: filter 0.5s ease-in-out;
 }
 
-.email-card > a img:hover {
+.email-image:hover {
   filter: grayscale(5%);
   box-shadow: 0px 4px 15px -16px rgba(0,0,0,0.1);
 }
@@ -264,6 +274,11 @@ ul li {
   display: flex;
   flex-direction: column;
   gap: var(--header-gap);
+  border: 1px #eee solid;
+  padding: 12px;
+  border-radius: var(--soft-radius);
+  box-shadow: 0px 4px 15px -16px rgba(0,0,0,0.1);
+  background-color: #fff;
 }
 
 /*About*/
@@ -303,11 +318,19 @@ ul li {
   #about {
     grid-template-columns: 1fr;
   }
+
+  #email-list {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 598px) {
   #skill-list {
     grid-template-columns: 1fr 1fr;
+  }
+
+  #email-list {
+    grid-template-columns: 1fr;
   }
 }
 
