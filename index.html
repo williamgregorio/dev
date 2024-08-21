@@ -79,7 +79,23 @@
           <p>In summary, my attention to detail, adherence to best practices, and the willing to learn, ensures good results in email development. I find joy in the small things, as they often hold the most value and bring the best return.</p><br>
       </div>
     </section>
-    <div id="popup"></div>
+    <footer>
+        <hr>
+          <div id="footer-sections">
+          <div class="footer-meta-rights">
+            <span></span>
+            <script>
+              const footerMeta = document.querySelector(".footer-meta-rights span");
+              let date = new Date();
+              footerMeta.textContent += `© ${date.getFullYear()}`;
+            </script>
+          </div>
+          <div class="footer-socials"> 
+            <a href="https://www.linkedin.com/in/william-gregorio/" target="_blank"><div class="social-icon linkedin-icon"></div></a>
+            <a href="https://github.com/williamgregorio" target="_blank"><div class="social-icon github-icon"></div></a>
+          </div>
+          </div>
+    <footer>
   </main>
   <script src="script.js"></script>
 </body>
