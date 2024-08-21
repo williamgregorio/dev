@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 * {
   margin: 0;
@@ -9,16 +9,16 @@
 :root {
   --top-padding: 2em;
   --bottom-padding: 2em;
-  --primary-color: #3F729B;
-  --secondary-color: #A9D2D5;
+  --primary-color: #3f729b;
+  --secondary-color: #a9d2d5;
   --header-gap: 18px;
   --small-gap: 8px;
   --text-gap: 16px;
   --soft-radius: 8px;
 
-  --text-primary: #1E1B18;
+  --text-primary: #1e1b18;
   --text-secondary: #333333;
-  --text-primary-light: #FEFFFE;
+  --text-primary-light: #fefffe;
 }
 
 h1 {
@@ -66,42 +66,48 @@ a {
   color: inherit;
 }
 
-button{
+button {
   font-family: "Inter", sans-serif;
   padding: 10px 20px;
   border: none;
   border-radius: var(--soft-radius);
-  background: rgb(63,114,155);
-  background: linear-gradient(90deg, rgba(63,114,155,1) 0%, rgba(45,108,158,1) 100%);
+  background: rgb(63, 114, 155);
+  background: linear-gradient(
+    90deg,
+    rgba(63, 114, 155, 1) 0%,
+    rgba(45, 108, 158, 1) 100%
+  );
   color: var(--text-primary-light);
   font-weight: 700;
   font-size: 16px;
   cursor: pointer;
-  transition: transform 0.4s ease-in-out, grayscale 0.2s ease;
-  box-shadow: 0px 4px 15px -16px rgba(0,0,0,0.1);
+  transition:
+    transform 0.4s ease-in-out,
+    grayscale 0.2s ease;
+  box-shadow: 0px 4px 15px -16px rgba(0, 0, 0, 0.1);
   filter: grayscale(30%);
 }
 
-button:hover, button:focus {
+button:hover,
+button:focus {
   filter: grayscale(0%);
   transform: translateY(-3px);
 }
 
 button:active {
-  background-color: #1D3549;
+  background-color: #1d3549;
   transform: translateY(1px);
 }
 
 button:disabled {
-  background-color: #D7D7D7;
-  color: #A9A9A9;
+  background-color: #d7d7d7;
+  color: #a9a9a9;
   cursor: not-allowed;
 }
 
 main {
   margin-left: 20%;
   margin-right: 20%;
-
 }
 
 header {
@@ -141,8 +147,12 @@ ul li {
 .green-tag {
   font-family: "Inter", sans-serif;
   background-color: #065333;
-  background: rgb(6,83,51);
-  background: linear-gradient(90deg, rgba(6,83,51,1) 0%, rgba(0,55,32,1) 100%);
+  background: rgb(6, 83, 51);
+  background: linear-gradient(
+    90deg,
+    rgba(6, 83, 51, 1) 0%,
+    rgba(0, 55, 32, 1) 100%
+  );
   color: var(--text-primary-light);
   padding: 5px;
   font-size: 14px;
@@ -154,10 +164,9 @@ ul li {
 .scrolled {
   background-color: #fff;
   border-bottom: 1px #eee solid;
-  box-shadow: 0px 4px 15px -16px rgba(0,0,0,0.1);
+  box-shadow: 0px 4px 15px -16px rgba(0, 0, 0, 0.1);
   border-radius: 0 0 var(--soft-radius) var(--soft-radius);
-
-} 
+}
 
 #popup {
   position: fixed;
@@ -168,8 +177,8 @@ ul li {
   border-radius: var(--soft-radius);
   padding: 200px;
   border: 1px #eee solid;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  z-index:1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
   display: none;
 }
 
@@ -210,7 +219,7 @@ nav a.active {
   border-radius: var(--soft-radius);
   transform: rotate(1deg);
   filter: grayscale(40%) brightness(96%) contrast(92%);
-  box-shadow: 0px 4px 15px -16px rgba(0,0,0,0.1);
+  box-shadow: 0px 4px 15px -16px rgba(0, 0, 0, 0.1);
   max-width: 90%;
   height: auto;
   border: 2px #eee solid;
@@ -249,7 +258,7 @@ nav a.active {
   border: 2px #eee solid;
   padding: 8px;
   border-radius: var(--soft-radius);
-  box-shadow: 0px 4px 15px -16px rgba(0,0,0,0.1);
+  box-shadow: 0px 4px 15px -16px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-weight: bold;
 }
@@ -277,7 +286,7 @@ nav a.active {
   display: grid;
   grid-template-columns: 1fr 1fr auto;
   grid-template-rows: auto;
-  box-shadow: 0px 4px 15px -16px rgba(0,0,0,0.1);
+  box-shadow: 0px 4px 15px -16px rgba(0, 0, 0, 0.1);
   gap: var(--small-gap);
 }
 
@@ -299,7 +308,7 @@ nav a.active {
 
 .email-image:hover {
   filter: grayscale(5%);
-  box-shadow: 0px 4px 15px -16px rgba(0,0,0,0.1);
+  box-shadow: 0px 4px 15px -16px rgba(0, 0, 0, 0.1);
 }
 
 .email-card {
@@ -309,7 +318,7 @@ nav a.active {
   border: 2px #eee solid;
   padding: 12px;
   border-radius: var(--soft-radius);
-  box-shadow: 0px 4px 15px -16px rgba(0,0,0,0.1);
+  box-shadow: 0px 4px 15px -16px rgba(0, 0, 0, 0.1);
   background-color: #fff;
 }
 
@@ -327,6 +336,41 @@ nav a.active {
   overflow: hidden;
 }
 
+#footer-sections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: var(--top-padding);
+  padding-bottom: var(--bottom-padding);
+  align-self: flex-start;
+}
+
+.footer-socials {
+  display: flex;
+  flex-direction: row;
+  gap: var(--small-gap);
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.linkedin-icon {
+  background-image: url("assets/socials/linkedin.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 38px;
+  max-height: auto;
+}
+
+.github-icon {
+  background-image: url("assets/socials/github.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-height: auto;
+  width: 32px;
+}
 /*Laptops*/
 @media (max-width: 1390px) {
   #hero {
@@ -344,7 +388,7 @@ nav a.active {
     margin-left: 10%;
     margin-right: 10%;
   }
-  
+
   #about {
     grid-template-columns: 1fr;
   }
@@ -369,5 +413,5 @@ nav a.active {
   main {
     margin-left: 8%;
     margin-right: 8%;
+  }
 }
-
