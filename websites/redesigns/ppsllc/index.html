@@ -28,8 +28,9 @@
       </nav>
     </header>
 
-    <section>
-      <div id="hero-background">
+    <section id="hero">
+      <div class="hero-banner"></div>
+      <div class="hero-content">
         <div class="hero-copywriting">
           <h1>End-to-End Utility Solutions with Proven Results</h1>
           <p>
@@ -48,7 +49,7 @@
     </section>
 
     <section id="introduction">
-      <div class="feed-reader-information">
+      <div class="introduction-information">
         <h2>An Efficient Provider</h2>
         <img src="assets/pps-man-inside.png" alt="man inside" />
         <p>
@@ -64,7 +65,8 @@
           pipelines to niche technical maintenance and inspections.
         </p>
       </div>
-      <div class="feeder-information-gallery">
+
+      <div class="introduction-information-gallery">
         <img src="assets/pps-man-2.png" alt="" />
         <img src="assets/pps-man-3.png" alt="" />
         <img src="assets/pps-man-4.png" alt="" />
@@ -72,59 +74,65 @@
       </div>
     </section>
 
-    <section>
-      <div class="services-sidebar">
-        <h2>Services</h2>
-        <ul>
-          <li><a href="#">Construction Services</a></li>
-          <li><a href="#">Gas Technical Services</a></li>
-          <li><a href="#">Oil to Gas Conversions</a></li>
-          <li><a href="#">Meter Exchange Services</a></li>
-          <li><a href="#">Electric Services</a></li>
-          <li><a href="#">Survey & Inspection Services</a></li>
-          <li><a href="#">Professional Services</a></li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
+    <section id="testimonials">
       <h2>Testimonials</h2>
-      <div id="testimonial-list">
-        <div class="testimonial-card">
-          <p class="testimonial-message"></p>
-          <div class="testimonial-from-credentials">
-            <p class="testimonial-credential-name"></p>
-            <p class="testimonial-credential-position"></p>
-            <div class="testimonial-from-business">
-              <img src="#" alt="business logo" />
-              <p class="testimonial-from-business-name"></p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div id="testimonial-list"></div>
     </section>
 
-    <section>
+    <section id="contact">
       <div id="pps-contact-us">
         <div class="pps-contact-copywriting">
-          <img src="assets/pps-second-logo.png" alt="pps second logo" />
-          <h2>Contact us</h2>
-          <p>
-            Quam nunc nunc eu sed. Sed rhoncus quis ultricies ac pellentesque.
-          </p>
-          <div class="pps-contact-types">
-            <div class="pps-contact-type">
-              <img src="#" alt="icon" />
-              <a href="#">Type</a>
+          <div class="pps-contact-sec-logo"></div>
+          <div class="contact-information">
+            <h2>Contact us</h2>
+            <p>
+              Quam nunc nunc eu sed. Sed rhoncus quis ultricies ac pellentesque.
+            </p>
+            <div class="pps-contact-types">
+              <div class="pps-contact-type">
+                <a href="#">845-566-8332</a>
+                <a href="#"
+                  >617 Little Britain Rd Suite 200 New Windsor, NY 12553</a
+                >
+                <a href="#">info@precisionpipelinesolutions.com</a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="pps-contact-form"></div>
+        <div class="pps-contact-form">
+          <form action="" method="POST">
+            <div>
+              <label for="first_name">First Name</label>
+              <input type="text" id="first_name" name="first_name" required />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+            <div>
+              <label for="business-name">Business Name</label>
+              <input type="text" id="business-name" name="business-name" />
+            </div>
+            <div>
+              <label for="last_name">Last Name</label>
+              <input type="text" id="last_name" name="last_name" required />
+            </div>
+            <div>
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
 
     <footer>
       <span>© 2024 Precision Pipeline Solutions. All Rights Reserved.</span>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
