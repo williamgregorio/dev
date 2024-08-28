@@ -120,7 +120,7 @@ const emails = [
   {
     type: emailTypes.promotional[1],
     description:
-      "A responsive new payment receipt email for a service business.",
+      "A responsive new promotional email for a discount based on your next 2 orders.",
     imageFileName: "instacart-discount-promo.png",
     filename: "instacart-discount-promotional.html",
   },
