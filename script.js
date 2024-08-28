@@ -117,6 +117,13 @@ const emails = [
     imageFileName: "stripe-first-transaction.png",
     filename: "stripe-transactional-payment-receipt.html",
   },
+  {
+    type: emailTypes.promotional[1],
+    description:
+      "A responsive new payment receipt email for a service business.",
+    imageFileName: "instacart-discount-promo.png",
+    filename: "instacart-discount-promotional.html",
+  },
 ];
 
 function EmailCard(type, description, imageFileName, filename) {
