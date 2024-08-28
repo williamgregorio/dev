@@ -1,10 +1,147 @@
 <mjml>
-  <mj-body>
-    <mj-section background-color="#FAF1E5">
-      <mj-column>
-        <mj-image width="300px" src="assets/instacart_logo.png"></mj-image>
+<mj-head>
+  <mj-style inline="inline">
+    .heading h1 {
+      font-family: Helvetica !important;
+      font-size: 42px !important;
+      color: #003D29 !important;
+     }
+    .paragraph p{
+      font-family: Helvetica !important;
+      font-size: 24px !important;
+      color: #003D29 !important;
+     }
+     .btn a {
+      width: 90% !important;
+      font-size: 24px !important;
+      padding: 28px 16px !important;
+     }
+     .nav a {
+      color: #343538 !important;
+      text-decoration: none !important;
+      font-family: Helvetica !important;
+      font-size: 14px !important;
+      font-weight: 700 !important;
+     }
 
+     @media only screen and (max-width: 498px) {
+      .col td div a {
+        background-color: red !important;
+        width: 100% !important;
+        padding: 0 !important;
+      }
+     }
+  </mj-style>
+
+  <mj-attributes>
+    <mj-section padding="0px">
+  </mj-attributes>
+
+</mj-head>
+
+  <mj-body>
+    <mj-section  background-color="#FAF1E5">
+      <mj-column width="90%">
+        <mj-image href="https://google.com" align="left" width="150px" src="assets/instacart_logo.png"></mj-image>
+        <mj-divider border-color="#222222" border-width="1px"></mj-divider>
       </mj-column>
     </mj-section>
-  </mj-body>
+
+    <mj-section background-color="#FAF1E5">
+      <mj-column width="90%" inner-border="20px">
+        <mj-text css-class="heading" padding-bottom="0" padding-top="0">
+          <h1>Get $30 off your next 2 orders</h1>
+        </mj-text>
+
+        <mj-text css-class="paragraph" padding-top="0" padding-bottom="12px">
+          <p>Need headphones, eye shadow, and ice cream? Or, shoes, a stapler, and cookware? Shop your local stores and get delivery as fast as 30 min or free pickup on orders $35+ in as little as 2 hours.</p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    
+    <mj-section background-color="#FAF1E5" padding-top="0">
+      <mj-column width="90%">
+        <mj-button font-weight="bold" border-radius="100px" css-class="btn" width="100%" href="https://google.com" font-family="Helvetica" background-color="#003D29" color="#FAF1E5">Save $60 now*</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#FAF1E5">
+      <mj-column width="85%">
+        <mj-text css-class="heading" align="center">
+          <h1>Discover new stores near you</h1>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#FAF1E5" padding-top="0">
+      <mj-group width="90%">
+        <mj-column padding-bottom="12px">
+          <mj-image src="assets/shop_grocery.png" width="300px" href="https://google.com"></mj-image>
+        </mj-column>
+        <mj-column>
+          <mj-image src="assets/shop_beauty.png" width="300px" href="https://google.com"></mj-image>
+        </mj-colum>
+      </mj-group>
+
+      <mj-group width="90%">
+        <mj-column>
+          <mj-image src="assets/shop_pets.png" width="300px" href="https://google.com"></mj-image>
+        </mj-column>
+        <mj-column>
+          <mj-image src="assets/shop_electronics.png" width="300px" href="https://google.com"></mj-image>
+        </mj-colum>
+      </mj-group>
+
+      <mj-column width="90%" padding-top="12px" padding-bottom="20px">
+        <mj-button font-weight="bold" border-radius="100px" css-class="btn" width="100%" href="https://google.com" font-family="Helvetica" background-color="#003D29" color="#FAF1E5">Save $60 now*</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#F7F7F7" padding="20px 25px">  
+      <mj-group width="90%">
+        <mj-column width="64%">
+          <mj-image align="left" src="assets/half_carrot_logo.png" width="16px" href="https://google.com" padding="0"></mj-image> 
+        </mj-column>
+
+        <mj-column width="12%">
+          <mj-image src="assets/facebook_icon.png" width="16px" alt="image 1" href="https://google.com" padding="0"></mj-image>
+        </mj-column>
+
+        <mj-column width="12%">
+          <mj-image src="assets/x_icon.png" width="16px" alt="image 2" href="https://google.com" padding="0"></mj-image>
+        </mj-column>
+
+        <mj-column width="12%">
+          <mj-image src="assets/instagram_icon.png" width="16px" alt="image 3" href="https://google.com" padding="0"></mj-image>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+
+    <mj-section background-color="#F7F7F7" padding="0 25px">
+      <mj-column width="30%">
+        <mj-text css-class="nav">
+          <a href="#">Need Help?</a>
+        </mj-text>
+        <mj-text css-class="nav">
+          <a href="#">Terms</a>
+        </mj-text>
+        <mj-text css-class="nav">
+          <a href="#">Privacy Policy</a>
+        </mj-text>
+        <mj-text css-class="nav">
+          <a href="#">Gift Cards</a>
+        </mj-text>
+      </mj-column>
+
+      <mj-column width="70%">
+        <mj-text css-class="nav">
+          <a href="#">Unsubscribe</a>
+        </mj-text>
+        <mj-text css-class="nav">
+          <a href="#">Instacart.com</a>
+        </mj-text>
+      </mj-column>
+
+    </mj-section>
+</mj-body>
 </mjml>
