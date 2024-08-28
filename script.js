@@ -134,9 +134,9 @@ function EmailCard(type, description, imageFileName, filename) {
   emailCardDiv.className += "email-card";
   emailCardMetaDiv.className += "email-card-meta";
   let metaTypeHeadingThree = document.createElement("h3");
-  metaTypeHeadingThree.textContent = `Type: ${type}`;
+  metaTypeHeadingThree.textContent = `${type}`;
   let metaDescriptionParagraph = document.createElement("p");
-  metaDescriptionParagraph.textContent = `Description: ${description}`;
+  metaDescriptionParagraph.textContent = `${description}`;
   emailCardMetaDiv.append(metaTypeHeadingThree, metaDescriptionParagraph);
 
   emailCardAnchorImage.setAttribute("target", "_blank");
