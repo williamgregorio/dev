@@ -5,7 +5,7 @@ const skills = [
   { name: "PHP", path: "php" },
   { name: "Mautic", path: "mautic" },
   { name: "Matomo", path: "matomo" },
-  { name: "Google AdWords", path: "googleads" },
+  { name: "MJML", path: "mjml" },
   { name: "GA4", path: "google-analytics" },
   { name: "Figma", path: "figma" },
   { name: "Salesforce", path: "salesforce" },
