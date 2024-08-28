@@ -314,6 +314,7 @@ nav a.active {
 .email-card {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: var(--header-gap);
   border: 2px #eee solid;
   padding: 12px;
