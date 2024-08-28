@@ -1,0 +1,10 @@
+<mjml>
+  <mj-body>
+    <mj-section background-color="#FAF1E5">
+      <mj-column>
+        <mj-image width="300px" src="assets/instacart_logo.png"></mj-image>
+
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>
