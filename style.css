@@ -268,7 +268,8 @@ nav a.active {
   background-size: contain;
   background-position: center;
   height: 100px;
-  width: auto;
+  width: 50%;
+  margin: 0 auto;
   object-fit: cover;
 }
 
