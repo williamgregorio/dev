@@ -8,7 +8,7 @@ const skills = [
   { name: "MJML", path: "mjml" },
   { name: "GA4", path: "google-analytics" },
   { name: "Figma", path: "figma" },
-  { name: "Salesforce", path: "salesforce" },
+  { name: "Klaviyo", path: "klaviyo" },
   { name: "WordPress", path: "wordpress" },
   { name: "Shopify", path: "shopify" },
 ];
