@@ -1,0 +1,15 @@
+[
+  { "name": "HTML5", "path": "html5" },
+  { "name": "CSS3", "path": "css3" },
+  { "name": "JavaScript", "path": "javascript" },
+  { "name": "PHP", "path": "php" },
+  { "name": "Mautic", "path": "mautic" },
+  { "name": "Matomo", "path": "matomo" },
+  { "name": "MJML", "path": "mjml" },
+  { "name": "GA4", "path": "google-analytics" },
+  { "name": "Figma", "path": "figma" },
+  { "name": "Klaviyo", "path": "klaviyo" },
+  { "name": "WordPress", "path": "wordpress" },
+  { "name": "Shopify", "path": "shopify" }
+]
+
