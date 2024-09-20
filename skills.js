@@ -1,6 +1,6 @@
 async function getSkills() {
   try {
-    const response = await fetch("https://williamgregorio.com/data/skills.json", {
+    const response = await fetch("data/skills.json", {
       method: "GET",
       headers: {"Content-Type": "application/json"}
     });
