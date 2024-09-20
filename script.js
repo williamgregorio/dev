@@ -49,7 +49,6 @@ function startTimer() {
   if (!timerRunning) {
     timerStartTime = new Date().getTime();
     timerRunning = true;
-    console.log(`Starting timer cycle number: ${scrollCount + 1}`);
     clearTimeout(timerTimeout);
   }
 }
@@ -59,7 +58,6 @@ function stopTimer() {
 
   const timerEndTime = new Date().getTime();
   const timeTaken = (timerEndTime - timerStartTime) / 1000;
-  console.log(`Time take to reach the bottom page: ${timeTaken} seconds`);
 
   scrollTimes.push({
     cycle: scrollCount + 1,
@@ -70,11 +68,9 @@ function stopTimer() {
   scrollCount++;
 
   if (scrollCount >= maxScrollCount) {
-    console.log("Maximum scroll count reached");
     window.removeEventListener("scroll", checkUserScrollPosition);
     showPopup();
   } else {
-    console.log("Scroll back to top to start a new cycle");
   }
 }
 
@@ -85,13 +81,10 @@ function checkUserScrollPosition() {
 
   if (scrollTop + viewportHeight >= documentHeight) {
     if (timerRunning) {
-      console.log(`Cycle number: ${scrollCount + 1}, touched bottom document`);
       stopTimer();
-      console.log(scrollTimes);
     }
   } else if (scrollTop === 0) {
     if (!timerRunning && scrollCount < maxScrollCount) {
-      console.log("User touched top of page, resetting timer.");
       startTimer();
     }
   }
@@ -107,7 +100,6 @@ function handleNocrollUpTimeout() {
   timerTimeout = setTimeout(() => {
     if (!timerRunning) {
       window.removeEventListener("scroll", checkUserScrollPosition);
-      console.log("No scroll up detected after detected, displaying data");
       showPopup();
     }
   }, 10000);
