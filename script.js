@@ -90,8 +90,6 @@ function checkUserScrollPosition() {
   }
 }
 
-const main = document.querySelector("main");
-
 function Popup() {}
 function showPopup() {}
 function closePopup() {}
