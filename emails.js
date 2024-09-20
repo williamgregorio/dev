@@ -1,6 +1,3 @@
-console.log("emails");
-
-
 async function getEmails() {
   try {
     const emailTypesResponse = await fetch("data/email-types.json", {
@@ -33,8 +30,11 @@ async function getEmails() {
 
 getEmails().then(emails => {
   if (emails && emails.length > 0) {
-    console.log(emails);
     const emailListDiv = document.querySelector("#email-list");
+
+    emails.forEach(email => {
+      return emailListDiv.append(EmailCard(email.type, email.description, email.imageFileName, email.filename))
+    });
 
   } else {
     console.log("No emails to process came back.");
@@ -48,7 +48,7 @@ function EmailCard(type, description, imageFile, fileName) {
 
   let emailCardDiv = document.createElement("div");
   let emailCardMetaDiv = document.createElement("div");
-  let emailCardAnchorImage = document.createElement("img");
+  let emailCardAnchorImage = document.createElement("a");
 
   emailCardDiv.className += "email-card";
   emailCardMetaDiv.className += "email-card-meta";
