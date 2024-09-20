@@ -1,0 +1,30 @@
+{
+  "transactional": [
+    "Order confirmation",
+    "Shipping confirmation",
+    "Password reset",
+    "Account creation",
+    "Payment receipt"
+  ],
+  "promotional": [
+    "Product announcements",
+    "Sales and discounts",
+    "Newsletters",
+    "Event invitations",
+    "Seasonal campaigns"
+  ],
+  "engagement": [
+    "Welcome emails",
+    "Re-engagement emails",
+    "Survey requests"
+  ],
+  "behavioral": [
+    "Abandoned cart",
+    "Browse abandonment",
+    "Product recommendations"
+  ],
+  "informational": [
+    "Company updates",
+    "Educational content"
+  ]
+}
