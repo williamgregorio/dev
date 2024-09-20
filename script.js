@@ -1,18 +1,3 @@
-const skills = [
-  { name: "HTML5", path: "html5" },
-  { name: "CSS3", path: "css3" },
-  { name: "JavaScript", path: "javascript" },
-  { name: "PHP", path: "php" },
-  { name: "Mautic", path: "mautic" },
-  { name: "Matomo", path: "matomo" },
-  { name: "MJML", path: "mjml" },
-  { name: "GA4", path: "google-analytics" },
-  { name: "Figma", path: "figma" },
-  { name: "Klaviyo", path: "klaviyo" },
-  { name: "WordPress", path: "wordpress" },
-  { name: "Shopify", path: "shopify" },
-];
-
 const emailTypes = {
   transactional: [
     "Order Confirmation",
@@ -36,30 +21,6 @@ const emailTypes = {
   ],
   informational: ["Company Updates", "Educational Content"],
 };
-
-// Skill card dom rendering
-function SkillCard(name, path) {
-  const cardDiv = document.createElement("div");
-  cardDiv.setAttribute("class", "skill");
-
-  const logoNameSpan = document.createElement("span");
-  logoNameSpan.textContent = name;
-
-  const imageSVGDiv = document.createElement("div");
-  imageSVGDiv.style.backgroundImage = `url("assets/${path}.svg")`;
-  imageSVGDiv.className += "skill-image";
-
-  cardDiv.append(logoNameSpan, imageSVGDiv);
-  return cardDiv;
-}
-
-// Displays skills logo
-const skillList = document.querySelector("#skill-list");
-
-skills.forEach((skill) => {
-  skillList.append(SkillCard(skill.name, skill.path));
-  return skillList;
-});
 
 // Scroll to top
 const heroAnchor = document.querySelector("#scroll-to-top");
