@@ -1,27 +1,3 @@
-const emailTypes = {
-  transactional: [
-    "Order Confirmation",
-    "Shipping Confirmation",
-    "Password Reset",
-    "Account Creation",
-    "Payment Receipt",
-  ],
-  promotional: [
-    "Product Announcements",
-    "Sales and Discounts",
-    "Newsletters",
-    "Event Invitations",
-    "Seasonal Campaigns",
-  ],
-  engagement: ["Welcome Emails", "Re-engagement Emails", "Survey Requests"],
-  behavioral: [
-    "Abandoned Cart",
-    "Browse Abandonment",
-    "Product Recommendations",
-  ],
-  informational: ["Company Updates", "Educational Content"],
-};
-
 // Scroll to top
 const heroAnchor = document.querySelector("#scroll-to-top");
 heroAnchor.addEventListener("click", (e) => {
@@ -60,63 +36,6 @@ document.addEventListener("scroll", () => {
   } else {
     header.classList.remove("scrolled");
   }
-});
-
-//Displays list of emails
-const emailListDiv = document.querySelector("#email-list");
-const emails = [
-  {
-    type: emailTypes.promotional[0],
-    description: "A responsive email for a new product announcement.",
-    imageFileName: "katz-newsletter-portfolio.png",
-    filename: "katz-promotional-product-announcement.html",
-  },
-  {
-    type: emailTypes.transactional[4],
-    description:
-      "A responsive new payment receipt email for a service business.",
-    imageFileName: "stripe-first-transaction.png",
-    filename: "stripe-transactional-payment-receipt.html",
-  },
-  {
-    type: emailTypes.promotional[1],
-    description: "A responsive new promotional email for a special discount.",
-    imageFileName: "instacart-discount-promo.png",
-    filename: "instacart-discount-promotional.html",
-  },
-];
-
-function EmailCard(type, description, imageFileName, filename) {
-  const rootPath = "assets";
-  let emailCardDiv = document.createElement("div");
-  let emailCardMetaDiv = document.createElement("div");
-  let emailCardAnchorImage = document.createElement("a");
-
-  emailCardDiv.className += "email-card";
-  emailCardMetaDiv.className += "email-card-meta";
-  let metaTypeHeadingThree = document.createElement("h3");
-  metaTypeHeadingThree.textContent = `${type}`;
-  let metaDescriptionParagraph = document.createElement("p");
-  metaDescriptionParagraph.textContent = `${description}`;
-  emailCardMetaDiv.append(metaTypeHeadingThree, metaDescriptionParagraph);
-
-  emailCardAnchorImage.setAttribute("target", "_blank");
-  emailCardAnchorImage.setAttribute("href", `emails/${filename}`);
-  emailCardAnchorImage.className += "email-image";
-  emailCardAnchorImage.style.backgroundImage = `url("${rootPath}/${imageFileName}")`;
-  emailCardDiv.append(emailCardMetaDiv, emailCardAnchorImage);
-  return emailCardDiv;
-}
-
-emails.forEach((email) => {
-  emailListDiv.append(
-    EmailCard(
-      email.type,
-      email.description,
-      email.imageFileName,
-      email.filename,
-    ),
-  );
 });
 
 //active state evaluator
