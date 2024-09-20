@@ -18,8 +18,26 @@ async function getSkills() {
 
 getSkills().then(skills => {
   if (skills) {
-    console.log(skills);
+    const skillList = document.querySelector("#skill-list");
+    skills.forEach((skill) => {
+      skillList.append(SkillCard(skill.name, skill.path));
+    })
   } else {
-    console.log("No skills to process came back :(");
+    console.log("No skills came back.");
   }
 });
+
+function SkillCard(name, path) {
+  let cardDiv = document.createElement("div");
+  cardDiv.className += "skill";
+
+  let logoNameSpan = document.createElement("span");
+  logoNameSpan.textContent = name;
+
+  let imageSVG = document.createElement("div");
+  imageSVG.style.backgroundImage = `url("assets/${path}.svg")`;
+  imageSVG.className += "skill-image";
+
+  cardDiv.append(logoNameSpan, imageSVG);
+  return cardDiv;
+}
