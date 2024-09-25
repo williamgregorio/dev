@@ -1,0 +1,14 @@
+{
+  "name": "williamgregorio.github.io",
+  "version": "1.0.0",
+  "description": "development",
+  "main": "development.js",
+  "scripts": {
+    "dev": "nodemon"
+  },
+  "author": "William Gregorio",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}

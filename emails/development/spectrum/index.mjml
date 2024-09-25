@@ -1,0 +1,14 @@
+<mjml>
+  <mj-head>
+    <!-- Add head content here -->
+  </mj-head>
+  <mj-body>
+    <mj-wrapper border="1px green solid" padding-left="30px" padding-right="30px">
+      <mj-section border-bottom="1px #032A50 solid">
+        <mj-column>
+          <mj-image padding="0" align="left" width="150px" src="assets/spectrum-logo-1.png" alt="spectrum logo" />
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+  </mj-body>
+</mjml>
