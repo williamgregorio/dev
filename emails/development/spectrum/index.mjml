@@ -29,17 +29,17 @@
       </mj-section>
 
       <mj-section>
-        <mj-group>
-          <mj-column border="2px #eee solid" border-radius="16px">
+          <mj-column width="29.33%" padding="10px" border="1px #eee solid">
             <mj-image src="assets/speed-icon.png" width="60px" padding="0" alt="Image description"/>
           </mj-column>
-          <mj-column border="2px #eee solid">
+          <mj-column width="4px"></mj-column>
+          <mj-column width="29.33%" padding="10px" border="1px #eee solid">
             <mj-image src="assets/security-icon.png" width="60px" padding="0" alt="Image description" />
           </mj-column>
-          <mj-column border="2px #eee solid">
+          <mj-column width="4px"></mj-column>
+          <mj-column width="29.33%" padding="10px" border="1px #eee solid">
             <mj-image src="assets/simplicity-icon.png" width="60px" padding="0" alt="Image description" />
           </mj-column>
-        </mj-group>
       </mj-section>
 
     </mj-wrapper>
