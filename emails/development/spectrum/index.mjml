@@ -29,25 +29,17 @@
       </mj-section>
 
       <mj-section>
-        <mj-group>
-          <mj-column width="33.33%" padding="10px">
-            <mj-wrapper border="1px #eee solid" border-radius="16px" padding="20px">
-              <mj-image src="assets/speed-icon.png" width="60px" padding="0" alt="Image description"/>
-            </mj-wrapper>
+          <mj-column width="29.33%" padding="10px" border="1px #eee solid">
+            <mj-image src="assets/speed-icon.png" width="60px" padding="0" alt="Image description"/>
           </mj-column>
-
-          <mj-column width="33.33%" padding="10px">
-            <mj-wrapper border="1px #eee solid" border-radius="16px" padding="20px">
-              <mj-image src="assets/security-icon.png" width="60px" padding="0" alt="Image description" />
-            </mj-wrapper>
+          <mj-column width="4px"></mj-column>
+          <mj-column width="29.33%" padding="10px" border="1px #eee solid">
+            <mj-image src="assets/security-icon.png" width="60px" padding="0" alt="Image description" />
           </mj-column>
-
-          <mj-column width="33.33%" padding="10px">
-            <mj-wrapper border="1px #eee solid" border-radius="16px" padding="20px">
-              <mj-image src="assets/simplicity-icon.png" width="60px" padding="0" alt="Image description" />
-            </mj-wrapper>
+          <mj-column width="4px"></mj-column>
+          <mj-column width="29.33%" padding="10px" border="1px #eee solid">
+            <mj-image src="assets/simplicity-icon.png" width="60px" padding="0" alt="Image description" />
           </mj-column>
-        </mj-group>
       </mj-section>
 
     </mj-wrapper>
