@@ -4,5 +4,8 @@
 test/
 
 
+#node modules
+/node_modules/
+
 
 
