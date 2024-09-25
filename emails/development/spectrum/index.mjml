@@ -1,6 +1,6 @@
 <mjml>
   <mj-head>
-    <!-- Add head content here -->
+    <mj-font name="Inter" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" />
   </mj-head>
   <mj-body>
     <mj-wrapper border="1px green solid" padding-left="30px" padding-right="30px">
@@ -9,6 +9,39 @@
           <mj-image padding="0" align="left" width="150px" src="assets/spectrum-logo-1.png" alt="spectrum logo" />
         </mj-column>
       </mj-section>
+     
+      <mj-section>
+        <mj-column>
+          <mj-image align="left" src="assets/hero.png" padding="0" href="#" alt="Image description" />
+        </mj-column>
+      </mj-section>
+
+      <mj-section>
+        <mj-column>
+          <mj-text letter-spacing="-1px" line-height="48px" color="#032A50" font-family="Inter" font-weight="bold" font-size="48px" align="center">
+            Get a Faster, Safer, Connection
+          </mj-text>
+          <mj-spacer height="6px" />
+          <mj-text font-size="20px" color="#000000" font-weight="200" font-family="Inter" align="center">
+            Spectrum Advanced WiFi is the simple solution to enjoy a faster, more secure WiFi connection for every device in your home WiFi network.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section>
+        <mj-group>
+          <mj-column border="2px #eee solid" border-radius="16px">
+            <mj-image src="assets/speed-icon.png" width="60px" padding="0" alt="Image description"/>
+          </mj-column>
+          <mj-column border="2px #eee solid">
+            <mj-image src="assets/security-icon.png" width="60px" padding="0" alt="Image description" />
+          </mj-column>
+          <mj-column border="2px #eee solid">
+            <mj-image src="assets/simplicity-icon.png" width="60px" padding="0" alt="Image description" />
+          </mj-column>
+        </mj-group>
+      </mj-section>
+
     </mj-wrapper>
   </mj-body>
 </mjml>
