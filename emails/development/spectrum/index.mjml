@@ -62,7 +62,7 @@
 
       <mj-section>
         <mj-column>
-          <mj-button>
+          <mj-button padding="7px 15px" border-radius="12px" background-color="#00203E" font-weight="bold" font-family="Inter" href="#">
             Shop now
           </mj-button>
         </mj-column>
