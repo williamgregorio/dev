@@ -13,12 +13,19 @@
     "imageFileName": "stripe-first-transaction.png",
     "filename": "stripe-transactional-payment-receipt.html"
   },
-  {
+   {
     "type": "promotional",
     "typeIndex": 1,
     "description": "A responsive new promotional email for a special discount.",
     "imageFileName": "instacart-discount-promo.png",
     "filename": "instacart-discount-promotional.html"
+  },
+  {
+    "type": "promotional",
+    "typeIndex": 0,
+    "description": "Inspired by the new release of the WiFi 6 Router by Spectrum, written in MJML4 with support with major email clients.",
+    "imageFileName": "spectrum-promo-pa.png",
+    "filename": "spectrum-promotional-product-announcements.html"
   }
 ]
 
