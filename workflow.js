@@ -8,7 +8,7 @@ const rl = readline.createInterface({
 });
 
 const root = process.cwd();
-const rootAssetsDirectory = path.join(root, "assets");
+const rootAssetsDirectory = path.join(root, "emails", "assets");
 
 function getProjectNamePrompt() {
 rl.question(`Provide project name directory: `, projectName => {
@@ -20,7 +20,7 @@ function nameYourProductionProjectFile(projectName, htmlContent) {
   const askUserForHTMLFileName = () => {
     rl.question(`Name your project file (no extension required): `, htmlFileName => {
       const productionFileName = `${htmlFileName}.html`;
-      const productionFilePath = path.join(root, productionFileName);
+      const productionFilePath = path.join(root, "emails", productionFileName);
       fs.access(productionFilePath, fs.constants.F_OK, (err) => {
         if (err) {
           fs.writeFile(productionFilePath, htmlContent, (err) => {
