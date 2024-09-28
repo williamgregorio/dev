@@ -62,11 +62,41 @@
 
       <mj-section>
         <mj-column>
-          <mj-button>
+          <mj-button padding="7px 15px" border-radius="12px" background-color="#00203E" font-weight="bold" font-family="Inter" href="#">
             Shop now
           </mj-button>
         </mj-column>
       </mj-section>
+
+      <mj-section>
+        <mj-column>
+          <mj-text font-weight="400" font-size="40px" color="#032A50" font-family="Inter" align="center">
+            Elevate Your Connection
+          </mj-text>
+          <mj-text align="center" font-family="Inter" font-size="20px" font-weight="200">
+            Spectrum Advanced WiFi takes your in-home WiFi to the next level. Here’s what it delivers:
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section>
+        <mj-column padding="0">
+          <mj-text font-size="32px" font-family="Inter" font-weight="500" padding="0" color="#000000">
+            Complete Coverage
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding="0">
+        <mj-column padding="0">
+         <mj-text align="left" font-size="20px" font-family="Inter" font-weight="200" padding="0">
+           Advanced WiFi is designed to provide complete coverage over your home WiFi network, ideal for families and any household with multi-device users.
+         </mj-text> 
+        </mj-column>
+        <mj-column>
+          <mj-image src="assets/family-and-devices.png" alt="Image description" width="232px" padding="0"/>
+        </mj-column>
+      </mj-section>
+
 
     </mj-wrapper>
   </mj-body>
