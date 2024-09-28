@@ -60,6 +60,14 @@
           </mj-column>
       </mj-section>
 
+      <mj-section>
+        <mj-column>
+          <mj-button>
+            Shop now
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
     </mj-wrapper>
   </mj-body>
 </mjml>
