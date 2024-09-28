@@ -79,6 +79,25 @@
         </mj-column>
       </mj-section>
 
+      <mj-section>
+        <mj-column padding="0">
+          <mj-text font-size="32px" font-family="Inter" font-weight="500" padding="0" color="#000000">
+            Complete Coverage
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding="0">
+        <mj-column padding="0">
+         <mj-text align="left" font-size="20px" font-family="Inter" font-weight="200" padding="0">
+           Advanced WiFi is designed to provide complete coverage over your home WiFi network, ideal for families and any household with multi-device users.
+         </mj-text> 
+        </mj-column>
+        <mj-column>
+          <mj-image src="assets/family-and-devices.png" alt="Image description" width="232px" padding="0"/>
+        </mj-column>
+      </mj-section>
+
+
     </mj-wrapper>
   </mj-body>
 </mjml>
