@@ -68,6 +68,17 @@
         </mj-column>
       </mj-section>
 
+      <mj-section>
+        <mj-column>
+          <mj-text font-weight="400" font-size="40px" color="#032A50" font-family="Inter" align="center">
+            Elevate Your Connection
+          </mj-text>
+          <mj-text align="center" font-family="Inter" font-size="20px" font-weight="200">
+            Spectrum Advanced WiFi takes your in-home WiFi to the next level. Here’s what it delivers:
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
     </mj-wrapper>
   </mj-body>
 </mjml>
