@@ -31,14 +31,23 @@
       <mj-section>
           <mj-column width="29.33%" padding="10px" border="1px #eee solid">
             <mj-image src="assets/speed-icon.png" width="60px" padding="0" alt="Image description"/>
+            <mj-text align="center" font-weight="bold" font-family="Inter" font-size="16px">
+              Speed
+            </mj-text>
           </mj-column>
           <mj-column width="4px"></mj-column>
           <mj-column width="29.33%" padding="10px" border="1px #eee solid">
             <mj-image src="assets/security-icon.png" width="60px" padding="0" alt="Image description" />
+            <mj-text align="center" font-weight="bold" font-family="Inter" font-size="16px">
+              Security
+            </mj-text>
           </mj-column>
           <mj-column width="4px"></mj-column>
           <mj-column width="29.33%" padding="10px" border="1px #eee solid">
             <mj-image src="assets/simplicity-icon.png" width="60px" padding="0" alt="Image description" />
+            <mj-text align="center" font-weight="bold" font-family="Inter" font-size="16px">
+            Simplicity
+            </mj-text>
           </mj-column>
       </mj-section>
 
