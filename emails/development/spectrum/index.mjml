@@ -29,17 +29,43 @@
       </mj-section>
 
       <mj-section>
-          <mj-column width="29.33%" padding="10px" border="1px #eee solid">
+          <mj-column width="29.33%" border="1px #eee solid">
             <mj-image src="assets/speed-icon.png" width="60px" padding="0" alt="Image description"/>
+            <mj-text align="center" font-weight="bold" font-family="Inter" font-size="16px">
+              Speed
+            </mj-text>
+            <mj-text font-size="14px" align="center" font-family="Inter" font-weight="300" height="190px">
+              Spectrum Advanced WiFi automatically optimizes your WiFi to provide the best connection for each device.
+            </mj-text>
           </mj-column>
           <mj-column width="4px"></mj-column>
-          <mj-column width="29.33%" padding="10px" border="1px #eee solid">
+          <mj-column width="29.33%"  border="1px #eee solid">
             <mj-image src="assets/security-icon.png" width="60px" padding="0" alt="Image description" />
+            <mj-text align="center" font-weight="bold" font-family="Inter" font-size="16px">
+              Security
+            </mj-text>
+            <mj-text font-size="14px" align="center" font-family="Inter" font-weight="300" height="190px">
+            Gain extra protection with Security Shield to keep online threats like viruses and malware at bay, including Smart Device Protection and Secure Browsin.
+            </mj-text>
           </mj-column>
           <mj-column width="4px"></mj-column>
-          <mj-column width="29.33%" padding="10px" border="1px #eee solid">
+          <mj-column width="29.33%"  border="1px #eee solid">
             <mj-image src="assets/simplicity-icon.png" width="60px" padding="0" alt="Image description" />
+            <mj-text align="center" font-weight="bold" font-family="Inter" font-size="16px">
+            Simplicity
+            </mj-text>
+            <mj-text font-size="14px" align="center" font-family="Inter" font-weight="300" height="190px">
+            Manage and control your in-home WiFi network from anywhere with the My Spectrum App. You even get alerts when new devices join your network.
+            </mj-text>
           </mj-column>
+      </mj-section>
+
+      <mj-section>
+        <mj-column>
+          <mj-button>
+            Shop now
+          </mj-button>
+        </mj-column>
       </mj-section>
 
     </mj-wrapper>
