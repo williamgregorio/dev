@@ -1,3 +1,4 @@
+console.log(`\r\n  _      __    __   _____ ____  \r\n | | \/| \/ ___ \/ \/  \/ __(_\/ \/ \/__\r\n | |\/ |\/ \/ -_\/ _ \\_\\ \\\/ \/ \/  \'_\/\r\n |__\/|__\/\\__\/_.__\/___\/_\/_\/_\/\\_\\ \r\n                                \r\n`);
 //active state evaluator
 const observerOptions = {
   root: null,
