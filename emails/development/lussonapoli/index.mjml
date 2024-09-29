@@ -3,7 +3,22 @@
     <mj-title>
       Lusso Napoli - Abandoned Cart
     </mj-title>
+    <mj-font name="Inter" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" />
   </mj-head>
   <mj-body>
+    <mj-wrapper border="1px red solid" padding-left="60px" padding-right="60px">
+      <mj-section border="1px blue solid" padding="0">
+        <mj-column>
+          <mj-image src="assets/lusso-napoli-logo--png.png" alt="lusso napoli logo" width="216px" align="left" padding="0" />
+        </mj-column>
+      </mj-section>
+      <mj-section>
+        <mj-column>
+          <mj-text font-family="Inter">
+            What do you think?
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
   </mj-body>
 </mjml>
