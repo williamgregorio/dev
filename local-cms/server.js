@@ -1,16 +1,18 @@
 const express = require("express");
-const app = express();
+const path = require("path");
+const fs = require("node:fs");
+const cms = express();
 
 const port = 3000;
+const emailsJSON = path.join(__dirname, 'data', 'emails.json');
+cms.use(express.json());
+cms.use(express.static(path.join(__dirname, 'public')));
 
-app.use(express.json());
-app.use(express.static("../"));
+function readJSONData(file) {
+  const data = fs.readFileSync(file);
+  return JSON.parse(data);
+}
 
-
-app.get("/", (req,res) => {
-  res.send("Local CMS");
-})
-
-app.listen(port, () => {
+cms.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 })
