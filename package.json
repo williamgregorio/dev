@@ -4,7 +4,9 @@
   "description": "development",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon",
+    "serve": "http-serve -p 8080",
+    "start": "concurrently \"npm run dev\" \"npm run serve\""
   },
   "author": "William Gregorio",
   "license": "MIT",
