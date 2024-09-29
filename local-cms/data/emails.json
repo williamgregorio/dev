@@ -1,0 +1,31 @@
+[
+  {
+    "type": "promotional",
+    "typeIndex": 0,
+    "description": "A responsive email for a new product announcement.",
+    "imageFileName": "katz-newsletter-portfolio.png",
+    "filename": "katz-promotional-product-announcement.html"
+  },
+  {
+    "type": "transactional",
+    "typeIndex": 4,
+    "description": "A responsive new payment receipt email for a service business.",
+    "imageFileName": "stripe-first-transaction.png",
+    "filename": "stripe-transactional-payment-receipt.html"
+  },
+   {
+    "type": "promotional",
+    "typeIndex": 1,
+    "description": "A responsive new promotional email for a special discount.",
+    "imageFileName": "instacart-discount-promo.png",
+    "filename": "instacart-discount-promotional.html"
+  },
+  {
+    "type": "promotional",
+    "typeIndex": 0,
+    "description": "Inspired by the new release of the WiFi 6 Router by Spectrum, written in MJML4 with support with major email clients.",
+    "imageFileName": "spectrum-promo-pa.png",
+    "filename": "spectrum-promotional-product-announcements.html"
+  }
+]
+
