@@ -13,6 +13,16 @@ function readJSONData(file) {
   return JSON.parse(data);
 }
 
+function writeJSONData(data) {
+  fs.writeFileSync(data, JSON.stringify(data, null, 2));
+}
+
+cms.get("/api/emails", (req,res) => {
+  const emails = readJSONData(emailsJSON);
+  res.json(emails);
+});
+
+
 cms.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 })
