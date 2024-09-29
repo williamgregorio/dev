@@ -45,3 +45,6 @@ function addSectionHTML(section, html) {
   }
   throw new Error("Section tag is missing.");
 }
+
+function addSectionToDom(section){}
+
