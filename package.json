@@ -2,13 +2,19 @@
   "name": "williamgregorio.github.io",
   "version": "1.0.0",
   "description": "development",
-  "main": "development.js",
+  "main": "index.js",
   "scripts": {
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "serve": "http-server -p 8080",
+    "start": "concurrently \"npm run dev\" \"npm run serve\""
   },
   "author": "William Gregorio",
   "license": "MIT",
   "devDependencies": {
     "nodemon": "^3.1.7"
+  },
+  "dependencies": {
+    "concurrently": "^9.0.1",
+    "express": "^4.21.0"
   }
 }
