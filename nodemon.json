@@ -1,6 +1,6 @@
 {
   "watch": ["emails/development", "local-cms"],
   "ext": "mjml,js,json",
-  "exec": "mjml emails/development/spectrum/index.mjml -o emails/development/spectrum/index.html && node local-cms/server.js"
+  "exec": "mjml emails/development/lussonapoli/index.mjml -o emails/development/lussonapoli/index.html && node local-cms/server.js"
 }
 
