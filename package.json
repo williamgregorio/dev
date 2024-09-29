@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon",
-    "serve": "http-serve -p 8080",
+    "serve": "http-server -p 8080",
     "start": "concurrently \"npm run dev\" \"npm run serve\""
   },
   "author": "William Gregorio",
