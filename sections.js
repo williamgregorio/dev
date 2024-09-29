@@ -1,4 +1,3 @@
-console.log("sections");
 const main = document.querySelector("main");
 
 if (main) {
@@ -27,8 +26,6 @@ if (main) {
     `;
 
   addSectionHTML(heroSection, html);
-  console.log(heroSection);
-
 } else {
   throw new Error("Main tag is missing.");
 }
