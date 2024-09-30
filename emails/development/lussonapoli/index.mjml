@@ -4,6 +4,12 @@
       Lusso Napoli - Abandoned Cart
     </mj-title>
     <mj-font name="Inter" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" />
+    <mj-style>
+      .top-border > table{
+        border-top-left-radius: 12px !important;
+        border-top-right-radius: 12px !important;
+      }
+    </mj-style>
   </mj-head>
   <mj-body>
     <mj-wrapper border="1px red solid" padding-left="60px" padding-right="60px">
@@ -12,14 +18,34 @@
           <mj-image src="assets/lusso-napoli-logo--png.png" alt="lusso napoli logo" width="216px" align="left" padding="0" />
         </mj-column>
       </mj-section>
-      <mj-section border="1px green solid">
+      <mj-section border="1px green solid" padding="0">
         <mj-column>
         <mj-spacer height="20px" />
-          <mj-text font-family="Inter" font-size="50px" font-weight="bold" align="center" color="#1C1210" letter-spacing="1" line-height="0.9" padding="0">
+          <mj-text font-family="Inter" font-size="50px" font-weight="bold" align="center" color="#1C1210" letter-spacing="0.5px" line-height="0.9" padding="0">
             What do you think?
+          </mj-text>
+          <mj-spacer height="10px" />
+          <mj-text font-size="24px" font-family="Inter" font-weight="200" align="center" padding="0" letter-spacing="1px">
+            <p>William, we noticed you left these in your cart, because we care about you, we can give you <span style="font-weight:bold;">15% off</span> and <span style="font-weight:bold;">free shipping</span> on us.</p>
+            </p>
           </mj-text>
         </mj-column>
       </mj-section>
+
+      <mj-section padding="0">
+        <mj-column background-color="#F0E4CF" css-class="top-border" padding-top="30px" padding-bottom="30px">
+          <mj-text font-family="Inter" align="center" font-size="32px" font-style="italic" font-weight="400" color="#1C1210" padding="0">
+            Gaziano & Girling St. James II in Margaux Patina MH71      
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section padding="0">
+        <mj-column>
+          <mj-image src="assets/gaz-mh71.png" alt="gaz shoes" padding="0" />
+        </mj-column>
+      </mj-section>
+
+
     </mj-wrapper>
   </mj-body>
 </mjml>
