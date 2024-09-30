@@ -34,22 +34,38 @@
 
       <mj-section padding="0">
        <mj-column>
+
        <mj-spacer height="20px" />
+
         <mj-text font-family="Inter" align="center" font-size="32px" font-style="italic" font-weight="300" color="#1C1210" padding="0">
           Gaziano & Girling St. James II in Margaux Patina MH71
         </mj-text>
+
         <mj-image src="assets/gaz-mh71.png" border-radius="12px" alt="Image description" />
+
         <mj-button font-family="Inter" font-size="32px" font-weight="bold" color="#fff" background-color="#28462E" width="100%" border-radius="200px" border="7px #DDD1BA solid" href="#">
           Check out now
         </mj-button>
-        <mj-text align="center" font-size="24px" padding="0" font-family="Inter">
+
+        <mj-text align="center" font-size="24px" padding="0" font-family="Inter" padding="0">
           <p style="text-decoration: underline; font-weight:bold;">USE CODE: <span style="font-style:italic;">LUSSO</span></p>
         </mj-text>
+
        </mj-column>
       </mj-section>
 
-
+      <mj-section>
+        <mj-column>
+          <mj-text align="center" font-size="40px" font-family="Inter" font-weight="bold" >
+            Great minds think alike
+          </mj-text>
+          <mj-spacer height="7px" />
+          <mj-text font-family="Inter" font-size="24px" align="center" padding="0" font-weight="300">
+            This is why you choose us, over others.
+          </mj-text>
+        </mj-column>
+      </mj-section>
 
     </mj-wrapper>
   </mj-body>
-</mjml>
+</mjmlj
