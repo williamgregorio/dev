@@ -65,6 +65,39 @@
           </mj-text>
         </mj-column>
       </mj-section>
+      <mj-section>
+        <mj-group>
+          <mj-column>
+          <mj-image src="assets/shipping-insurance-icon.png" alt="Image description" width="58px"  />
+          <mj-text>
+            Shipping insurance
+          </mj-text>
+          </mj-column>
+          <mj-column>
+          <mj-image src="assets/2-day-shipping-icon.png" alt="Image description" width="58px" />
+          <mj-text>
+            2 day shipping
+          </mj-text>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+
+      <mj-section>
+        <mj-group>
+          <mj-column>
+            <mj-image src="assets/247-customer-support-icon.png" alt="Image description" width="58px" />
+            <mj-text>
+              24/7 customer support
+            </mj-text>
+          </mj-column>
+          <mj-column>
+            <mj-image src="assets/refund-icon.png" alt="Image description" width="58px" />
+            <mj-text>
+              15 day rembursement
+            </mj-text>
+          </mj-column>
+        </mj-group>
+      </mj-section>
 
     </mj-wrapper>
   </mj-body>
