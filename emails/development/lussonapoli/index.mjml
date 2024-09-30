@@ -65,34 +65,36 @@
           </mj-text>
         </mj-column>
       </mj-section>
-      <mj-section>
+
+      <mj-section padding="0">
         <mj-group>
-          <mj-column>
-          <mj-image src="assets/shipping-insurance-icon.png" alt="Image description" width="58px"  />
-          <mj-text>
-            Shipping insurance
-          </mj-text>
+          <mj-column background-color="#eee" border-radius="24px" width="45%">
+            <mj-image src="assets/shipping-insurance-icon.png" alt="Image description" width="58px"  />
+            <mj-text font-weight="bold" align="center" font-size="24px" font-family="Inter" padding="0 0 20px 0">
+              Shipping insurance
+            </mj-text>
           </mj-column>
-          <mj-column>
-          <mj-image src="assets/2-day-shipping-icon.png" alt="Image description" width="58px" />
-          <mj-text>
-            2 day shipping
+          <mj-column width="25px"></mj-column>
+          <mj-column background-color="#eee" border-radius="24px" width="45%">
+ii2i2          <mj-image src="assets/2-day-shipping-icon.png" alt="Image description" width="58px" />
+          <mj-text font-weight="bold" align="center" font-size="24px" font-family="Inter" padding="0 0 20px 0">
+            Reliable 2 day delivery 
           </mj-text>
           </mj-column>
         </mj-group>
       </mj-section>
-
       <mj-section>
         <mj-group>
-          <mj-column>
+          <mj-column background-color="#eee" border-radius="24px" width="45%">
             <mj-image src="assets/247-customer-support-icon.png" alt="Image description" width="58px" />
-            <mj-text>
+            <mj-text font-weight="bold" align="center" font-size="24px" font-family="Inter" padding="0 0 20px 0">
               24/7 customer support
             </mj-text>
           </mj-column>
-          <mj-column>
+          <mj-column width="25px"></mj-column>
+          <mj-column background-color="#eee" border-radius="24px" width="45%">
             <mj-image src="assets/refund-icon.png" alt="Image description" width="58px" />
-            <mj-text>
+            <mj-text font-weight="bold" align="center" font-size="24px" font-family="Inter" padding="0 0 20px 0">
               15 day rembursement
             </mj-text>
           </mj-column>
