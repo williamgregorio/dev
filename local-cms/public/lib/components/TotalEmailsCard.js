@@ -1,5 +1,9 @@
-export function TotalEmailsCard(){
+function TotalEmailsCard(){
   const div = document.createElement("div");
-  console.log(div);
+  div.style.borderRadius = "12px";
+  div.style.padding = "2em";
+
   return div;
 }
+
+export { TotalEmailsCard };
