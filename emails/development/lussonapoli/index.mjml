@@ -9,10 +9,20 @@
         border-top-left-radius: 12px !important;
         border-top-right-radius: 12px !important;
       }
+
+      @media only screen and (max-width: 480px) {
+        .mobile-paddings table tr > td {
+          padding: 0 10px 0 10px !important;
+        }
+
+        .mobile-gap {
+          padding-bottom: 30px !important;
+        }
+      }
     </mj-style>
   </mj-head>
   <mj-body>
-    <mj-wrapper padding-left="60px" padding-right="60px">
+    <mj-wrapper padding-left="60px" padding-right="60px" css-class="mobile-paddings">
       <mj-section padding="0">
         <mj-column>
           <mj-image src="assets/lusso-napoli-logo--png.png" alt="lusso napoli logo" width="216px" align="left" padding="0" />
@@ -35,11 +45,13 @@
       <mj-section padding="0">
        <mj-column>
 
-       <mj-spacer height="20px" />
+       <mj-spacer height="20px"/>
 
         <mj-text font-family="Inter" align="center" font-size="24px" font-style="italic" font-weight="200" color="#1C1210" padding="0">
           Gaziano & Girling St. James II in Margaux Patina MH71
         </mj-text>
+
+        <mj-spacer height="20px" />
 
         <mj-image src="assets/gaz-mh71.png" border-radius="12px" alt="Image description" />
 
@@ -56,16 +68,17 @@
 
       <mj-section>
         <mj-column>
+        <mj-spacer height="20px" />
           <mj-text align="center" font-size="40px" font-family="Inter" font-weight="bold" >
             Great minds think alike
           </mj-text>
-          <mj-spacer height="7px" />
+          <mj-spacer height="20px" />
           <mj-text font-family="Inter" font-size="24px" align="center" padding="0" font-weight="300">
             This is why you choose us, over others.
           </mj-text>
         </mj-column>
       </mj-section>
-
+      <mj-spacer height="20px" />
       <mj-section padding="0">
         <mj-group>
           <mj-column background-color="#eee" border-radius="24px" width="45%">
@@ -83,7 +96,7 @@ ii2i2          <mj-image src="assets/2-day-shipping-icon.png" alt="Image descrip
           </mj-column>
         </mj-group>
       </mj-section>
-
+      <mj-spacer height="20px" />
       <mj-section>
         <mj-group>
           <mj-column background-color="#eee" border-radius="24px" width="45%">
@@ -92,9 +105,7 @@ ii2i2          <mj-image src="assets/2-day-shipping-icon.png" alt="Image descrip
               24/7 customer support
             </mj-text>
           </mj-column>
-
           <mj-column width="25px"></mj-column>
-
           <mj-column background-color="#eee" border-radius="24px" width="45%">
             <mj-image src="assets/refund-icon.png" alt="Image description" width="58px" />
             <mj-text font-weight="bold" align="center" font-size="24px" font-family="Inter" padding="0 0 20px 0">
@@ -103,7 +114,7 @@ ii2i2          <mj-image src="assets/2-day-shipping-icon.png" alt="Image descrip
           </mj-column>
         </mj-group>
       </mj-section>
-
+      <mj-spacer height="20px" />
       <mj-section padding="0">
         <mj-column>
           <mj-text font-family="Inter" font-size="40px" font-weight="bold" align="center">
@@ -111,8 +122,7 @@ ii2i2          <mj-image src="assets/2-day-shipping-icon.png" alt="Image descrip
           </mj-text>
         </mj-column>
       </mj-section>
-
-
+      <mj-spacer height="20px" />
       <mj-section padding="0"> 
         <mj-group>
           <mj-column padding="0" width="45%">
@@ -126,9 +136,7 @@ ii2i2          <mj-image src="assets/2-day-shipping-icon.png" alt="Image descrip
               Learn more
             </mj-button>
           </mj-column>
-
           <mj-column width="45px"></mj-column>
-
           <mj-column width="45%" padding="0">
             <mj-image src="assets/saint-crispins-523.png" width="287.5px" alt="Image description" border="1px #000000 solid" border-radius="12px" padding="0" align="right" />
             <mj-spacer height="20px" />
@@ -143,7 +151,7 @@ ii2i2          <mj-image src="assets/2-day-shipping-icon.png" alt="Image descrip
         </mj-group>
       </mj-section>
     </mj-wrapper>
-
+    <mj-spacer height="20px" />
     <mj-section padding="0" background-color="#28462E" padding-left="60px" padding-right="60px" padding-top="33px">
       <mj-column> 
         <mj-text color="#fff" font-family="Inter" padding="0">
