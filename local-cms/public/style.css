@@ -14,9 +14,10 @@ header {
   padding-left: 2%;
   padding-right: 2%;
   display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #121212;
   gap: 12px;
-  border: 1px red solid;
 }
 header > a {
   font-weight: bold;

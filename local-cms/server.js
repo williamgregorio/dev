@@ -3,7 +3,7 @@ const path = require("path");
 const fs = require("node:fs");
 const cms = express();
 
-const port = 3000;
+const port = 3001;
 const emailsJSON = path.join(__dirname, 'data', 'emails.json');
 cms.use(express.json());
 cms.use(express.static(path.join(__dirname, 'public')));
@@ -21,7 +21,6 @@ cms.get("/api/emails", (req,res) => {
   const emails = readJSONData(emailsJSON);
   res.json(emails);
 });
-
 
 cms.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
