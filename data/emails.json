@@ -2,35 +2,35 @@
   {
     "type": "promotional",
     "typeIndex": 0,
-    "description": "This is a product announcement email for a gluten free bakery online e-commerce store, written with raw HTML tables, or around 195 lines of code, with a final delivery time of 1 hour and 14 minutes. It encourges customers to try it and shop now, if that didn't work it also recommendsother products to make sure customers can atleast visit the store.",
+    "description": "This is a product announcement email for a gluten free bakery online e-commerce store, written with raw HTML tables, or around 195 lines of code, with a final delivery time of 1 hour and 14 minutes. It encourges customers to try it and shop now, if that didn't work it also recommends other products to make sure customers can atleast visit the store.",
     "imageFileName": "katz-newsletter-portfolio.png",
     "filename": "katz-promotional-product-announcement.html"
   },
   {
     "type": "transactional",
     "typeIndex": 4,
-    "description": "This is Stripe's first transaction email that is sent out to new business owners, written with raw HTML tables, around 174 lines of code, that took around 1 hour and 23 minutes. While not a production level eemail, it shows the power, a framework like MJML4 can have in time reduction.",
+    "description": "This is Stripe's first transaction email that is sent out to new business owners, written with raw HTML tables, around 174 lines of code, that took around 1 hour and 23 minutes. While not a production level email, it shows the power, a framework like MJML4 can have in time reduction.",
     "imageFileName": "stripe-first-transaction.png",
     "filename": "stripe-transactional-payment-receipt.html"
   },
    {
     "type": "promotional",
     "typeIndex": 1,
-    "description": "Known as Maplebear Inc. or DBA Instacart, that operates grocery delivery services, written with MJML4 and tested with Litmus, for a discount promotion campaign, with additional call to actions for increase i customer website traffic.",
+    "description": "Known as Maplebear Inc. or DBA Instacart, that operates grocery delivery services, written with MJML4 and tested with Litmus, for a discount promotional campaign, and additional call to actions for increase in customer website traffic.",
     "imageFileName": "instacart-discount-promo.png",
     "filename": "instacart-discount-promotional.html"
   },
   {
     "type": "promotional",
     "typeIndex": 0,
-    "description": "Inspired by the new release of the WiFi 6 Router by Spectrum.I designed with Figma than wrote it with MJML4 for faster development time, giving the email strong support for major email clients like Outlook.",
+    "description": "Inspired by the new release of the WiFi 6 Router by Spectrum. I designed it with Figma than wrote it with MJML4 for faster development time, giving the email strong support for major email clients like Outlook.",
     "imageFileName": "spectrum-promo-pa.png",
     "filename": "spectrum-promotional-product-announcements.html"
   },
   {
     "type": "behavioral",
     "typeIndex": 0,
-    "description": "An abandoned cart email used for high end bespoke dress hoes online store.Designed with Figma and written in MJML4 with support withmajor email clients, it's also spam compliant and makes customer feel special.", 
+    "description": "An abandoned cart email used for high end bespoke dress shoes online store. Designed with Figma and written in MJML4 with support with major email clients, it's also spam compliant and makes customer feel special.", 
     "imageFileName": "lussonapoli-beh-aban-cart.png",
     "filename": "lussonapoli-behavioral-abandoned-cart.html"
   }
