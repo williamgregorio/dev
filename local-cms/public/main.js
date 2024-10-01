@@ -2,9 +2,13 @@ import { fetchData } from './lib/fetch-data.js';
 import { TotalEmailsCard } from './lib/components/TotalEmailsCard.js';
 
 const main = document.querySelector("main");
+const host = location.href;
+console.log(host);
+fetchData(`${host}api/emails`).then(data => {
+  renderTotalEmails(data);
 
-fetchData("http://localhost:3000/api/emails").then(data => {
-  console.log(data);
+  main.append(TotalEmailsCard(data.length, "Total emails:"));
+
 }).catch(err => {
     console.error(err);
   })
@@ -12,6 +16,9 @@ fetchData("http://localhost:3000/api/emails").then(data => {
 
 // dashboard present emails
 
-function renderTotalEmails() {}
+function renderTotalEmails(data) {
+  for (let i = 0; i < data.length; i++) {
+    console.log(data[i]);
+  }
+}
 
-main.append(TotalEmailsCard());
