@@ -109,7 +109,7 @@ ii2i2          <mj-image src="assets/2-day-shipping-icon.png" alt="Image descrip
           <mj-column background-color="#eee" border-radius="24px" width="45%">
             <mj-image src="assets/refund-icon.png" alt="Image description" width="58px" />
             <mj-text font-weight="bold" align="center" font-size="24px" font-family="Inter" padding="0 0 20px 0">
-              15 day rembursement
+              15 day reimbursement
             </mj-text>
           </mj-column>
         </mj-group>
