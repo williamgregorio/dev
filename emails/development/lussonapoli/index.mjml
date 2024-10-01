@@ -12,7 +12,7 @@
     </mj-style>
   </mj-head>
   <mj-body>
-    <mj-wrapper border="1px #121212 solid" padding-left="60px" padding-right="60px">
+    <mj-wrapper padding-left="60px" padding-right="60px">
       <mj-section padding="0">
         <mj-column>
           <mj-image src="assets/lusso-napoli-logo--png.png" alt="lusso napoli logo" width="216px" align="left" padding="0" />
@@ -37,13 +37,13 @@
 
        <mj-spacer height="20px" />
 
-        <mj-text font-family="Inter" align="center" font-size="32px" font-style="italic" font-weight="300" color="#1C1210" padding="0">
+        <mj-text font-family="Inter" align="center" font-size="24px" font-style="italic" font-weight="200" color="#1C1210" padding="0">
           Gaziano & Girling St. James II in Margaux Patina MH71
         </mj-text>
 
         <mj-image src="assets/gaz-mh71.png" border-radius="12px" alt="Image description" />
 
-        <mj-button font-family="Inter" font-size="32px" font-weight="bold" color="#fff" background-color="#28462E" width="100%" border-radius="200px" border="7px #DDD1BA solid" href="#">
+        <mj-button font-family="Inter" font-size="28px" font-weight="bold" color="#fff" background-color="#28462E" width="100%" border-radius="200px" border="2px #DDD1BA solid" href="#">
           Check out now
         </mj-button>
 
@@ -65,18 +65,20 @@
           </mj-text>
         </mj-column>
       </mj-section>
-      <mj-section>
+
+      <mj-section padding="0">
         <mj-group>
-          <mj-column>
-          <mj-image src="assets/shipping-insurance-icon.png" alt="Image description" width="58px"  />
-          <mj-text>
-            Shipping insurance
-          </mj-text>
+          <mj-column background-color="#eee" border-radius="24px" width="45%">
+            <mj-image src="assets/shipping-insurance-icon.png" alt="Image description" width="58px"  />
+            <mj-text font-weight="bold" align="center" font-size="24px" font-family="Inter" padding="0 0 20px 0">
+              Shipping insurance
+            </mj-text>
           </mj-column>
-          <mj-column>
-          <mj-image src="assets/2-day-shipping-icon.png" alt="Image description" width="58px" />
-          <mj-text>
-            2 day shipping
+          <mj-column width="25px"></mj-column>
+          <mj-column background-color="#eee" border-radius="24px" width="45%">
+ii2i2          <mj-image src="assets/2-day-shipping-icon.png" alt="Image description" width="58px" />
+          <mj-text font-weight="bold" align="center" font-size="24px" font-family="Inter" padding="0 0 20px 0">
+            Reliable 2 day delivery 
           </mj-text>
           </mj-column>
         </mj-group>
@@ -84,21 +86,84 @@
 
       <mj-section>
         <mj-group>
-          <mj-column>
+          <mj-column background-color="#eee" border-radius="24px" width="45%">
             <mj-image src="assets/247-customer-support-icon.png" alt="Image description" width="58px" />
-            <mj-text>
+            <mj-text font-weight="bold" align="center" font-size="24px" font-family="Inter" padding="0 0 20px 0">
               24/7 customer support
             </mj-text>
           </mj-column>
-          <mj-column>
+
+          <mj-column width="25px"></mj-column>
+
+          <mj-column background-color="#eee" border-radius="24px" width="45%">
             <mj-image src="assets/refund-icon.png" alt="Image description" width="58px" />
-            <mj-text>
+            <mj-text font-weight="bold" align="center" font-size="24px" font-family="Inter" padding="0 0 20px 0">
               15 day rembursement
             </mj-text>
           </mj-column>
         </mj-group>
       </mj-section>
 
+      <mj-section padding="0">
+        <mj-column>
+          <mj-text font-family="Inter" font-size="40px" font-weight="bold" align="center">
+            We thought you'd love these!
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+
+      <mj-section padding="0"> 
+        <mj-group>
+          <mj-column padding="0" width="45%">
+            <mj-image src="assets/vass-shoes-alt.png" width="287.5px" alt="Image description" border="1px #000000 solid" border-radius="12px" padding="0" align="left" />
+            <mj-spacer height="20px" />
+            <mj-text align="center" padding="0" font-family="Inter">
+              Vass Shoes Alt English II
+            </mj-text>
+            <mj-spacer height="20px" />
+            <mj-button width="100%" padding="0" background-color="#F0E4CF" color="#121212" font-weight="bold" font-family="Inter" border-radius="12px" border="1px #28462E solid" font-size="16px" href="#">
+              Learn more
+            </mj-button>
+          </mj-column>
+
+          <mj-column width="45px"></mj-column>
+
+          <mj-column width="45%" padding="0">
+            <mj-image src="assets/saint-crispins-523.png" width="287.5px" alt="Image description" border="1px #000000 solid" border-radius="12px" padding="0" align="right" />
+            <mj-spacer height="20px" />
+            <mj-text align="center" padding="0" font-family="Inter">
+              Saint Crispin's 523 Croc Oxford
+            </mj-text>
+            <mj-spacer height="20px" />
+            <mj-button width="100%" padding="0" background-color="#F0E4CF" color="#121212" font-weight="bold" font-family="Inter" border-radius="12px" border="1px #28462E solid" font-size="16px" href="button" >
+              Learn more
+            </mj-button>
+          </mj-column>
+        </mj-group>
+      </mj-section>
     </mj-wrapper>
+
+    <mj-section padding="0" background-color="#28462E" padding-left="60px" padding-right="60px" padding-top="33px">
+      <mj-column> 
+        <mj-text color="#fff" font-family="Inter" padding="0">
+          <p><a style="color:#fff;" href="#">Unsubscribe</a> | <a href="#" style="color:#fff;">View online</a> | <a href="#" style="color:#fff;">Privacy Policy</a></p>
+        </mj-text>
+        <mj-text color="#fff" font-family="Inter" padding="0">
+          Not all products may be available at the time, inventory may vary.
+        </mj-text>
+        <mj-spacer height="20px" />
+        <mj-text color="#fff" font-family="Inter" padding="0">
+          ©2024 Lusso Napoli. All rights reserved.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="0" background-color="#28462E" padding-left="60px" padding-right="60px">
+      <mj-column> 
+        <mj-image src="assets/lusso-napoli-logo--png.png" alt="Image description" width="216px" padding="0" align="right" />
+      </mj-column>
+    </mj-section>
+
   </mj-body>
 </mjmlj
