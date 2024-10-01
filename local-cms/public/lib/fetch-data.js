@@ -1,4 +1,4 @@
-export async function fetchData(url) {
+ async function fetchData(url) {
   try {
     const response = await fetch(url);
     if (!response.ok) {
@@ -12,4 +12,4 @@ export async function fetchData(url) {
   }
 }
 
-
+export { fetchData };
