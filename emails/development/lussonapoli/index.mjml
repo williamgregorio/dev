@@ -143,5 +143,27 @@ ii2i2          <mj-image src="assets/2-day-shipping-icon.png" alt="Image descrip
         </mj-group>
       </mj-section>
     </mj-wrapper>
+
+    <mj-section padding="0" background-color="#28462E" padding-left="60px" padding-right="60px" padding-top="33px">
+      <mj-column> 
+        <mj-text color="#fff" font-family="Inter" padding="0">
+          <p><a style="color:#fff;" href="#">Unsubscribe</a> | <a href="#" style="color:#fff;">View online</a> | <a href="#" style="color:#fff;">Privacy Policy</a></p>
+        </mj-text>
+        <mj-text color="#fff" font-family="Inter" padding="0">
+          Not all products may be available at the time, inventory may vary.
+        </mj-text>
+        <mj-spacer height="20px" />
+        <mj-text color="#fff" font-family="Inter" padding="0">
+          ©2024 Lusso Napoli. All rights reserved.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="0" background-color="#28462E" padding-left="60px" padding-right="60px">
+      <mj-column> 
+        <mj-image src="assets/lusso-napoli-logo--png.png" alt="Image description" width="216px" padding="0" align="right" />
+      </mj-column>
+    </mj-section>
+
   </mj-body>
 </mjmlj
