@@ -1,24 +1,34 @@
 import { fetchData } from './lib/fetch-data.js';
-import { TotalEmailsCard } from './lib/components/TotalEmailsCard.js';
 
 const main = document.querySelector("main");
 const host = location.href;
-console.log(host);
-fetchData(`${host}api/emails`).then(data => {
-  renderTotalEmails(data);
 
-  main.append(TotalEmailsCard(data.length, "Total emails:"));
+fetchData(`${host}api/emails`).then(data => {
+  let allEmails = document.querySelector('#all-emails');
+  data.forEach((index,email) => {
+    console.log(index);
+   allEmails.append(EmailCard(email.type, email.description, email.imageFileName));
+  });
 
 }).catch(err => {
     console.error(err);
   })
 
+function EmailCard(type,description,image) {
+  let div = document.createElement('div');
+  div.className = 'email-card';
+  let emailTitle = document.createElement('h2');
+  emailTitle.textContent += 'Title';
+  let emailType = document.createElement('p');
+  emailType.textContent += type;
+  let emailDescription = document.createElement('p');
+  emailDescription.textContent = description;
+  let emailThumbnail = document.createElement('img');
+  emailThumbnail.setAttribute('src', `http://127.0.0.1:8080/assets/${image}`);
+  emailThumbnail.setAttribute('width', '100px');
 
-// dashboard present emails
-
-function renderTotalEmails(data) {
-  for (let i = 0; i < data.length; i++) {
-    console.log(data[i]);
-  }
+  div.append(emailTitle,emailType,emailDescription, emailThumbnail);
+  return div;
 }
+
 
