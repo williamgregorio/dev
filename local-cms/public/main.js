@@ -3,20 +3,25 @@ import { updateEmail } from './lib/update-email.js';
 
 const host = location.href;
 fetchData(`${host}api/emails`).then(data => {
-  let allEmails = document.querySelector('#all-emails');
-  data.forEach((email, index) => {
-    allEmails.append(EmailCard(email.type, email.description, email.imageFileName, index));
-  });
+  renderEmails(data);
 }).catch(err => {
   console.error(err);
-})
+});
 
-function EmailCard(type, description, image, index) {
+function renderEmails(data) {
+  let allEmails = document.querySelector('#all-emails');
+  allEmails.innerHTML = '';
+  data.forEach((email, index) => {
+    allEmails.append(EmailCard(email.title, email.type, email.description, email.imageFileName, index));
+  });
+}
+
+function EmailCard(title, type, description, image, index) {
   let div = document.createElement('div');
   div.setAttribute('data-index', index);
   div.className = 'email-card';
   let emailTitle = document.createElement('h2');
-  emailTitle.textContent += 'Title';
+  emailTitle.textContent += title;
   let emailType = document.createElement('p');
   emailType.textContent += type;
   let emailDescription = document.createElement('p');
@@ -29,21 +34,24 @@ function EmailCard(type, description, image, index) {
   editButton.textContent += 'Edit';
 
   editButton.addEventListener('click', () => {
-    console.log('click');
-    editEmail(index, type, description, image);
+    editEmail(index, title, type, description, image);
   });
 
   div.append(emailTitle, emailType, emailDescription, emailThumbnail, editButton);
   return div;
 }
 
-function editEmail(index, type, description, image) {
+function editEmail(index, title, type, description, image) {
   const emailCard = document.querySelector(`.email-card[data-index='${index}']`);
   emailCard.innerHTML = '';
 
   let form = document.createElement('form');
 
   form.setAttribute('data-index', index);
+
+  let inputTitle = document.createElement('input');
+  inputTitle.value = title;
+
   let labelForInputType = document.createElement('label');
   labelForInputType.htmlFor = 'email-type';
   labelForInputType.textContent = 'Enter type:';
@@ -76,22 +84,23 @@ function editEmail(index, type, description, image) {
   let submitButton = document.createElement('button');
   submitButton.textContent = 'Save';
   submitButton.addEventListener('click', async (e) => {
+    e.preventDefault();
     try {
-      const updatedData = await updateEmail(index, inputType.value, inputDescription.value, imageInput.value);
-
-      //rnder emails functions here
-    } catch (errr) {
+      const updatedData = await updateEmail(index, inputTitle.value, inputType.value, inputDescription.value, imageInput.value);
+      renderEmails(updatedData);
+    } catch (error) {
+      console.error('Error updating email: ', error);
     }
   });
 
-  form.append(inputTypeDiv, inputDescriptionDiv, imageInput, cancelEditButton);
+  form.append(inputTitle, inputTypeDiv, inputDescriptionDiv, imageInput, cancelEditButton, submitButton);
   emailCard.append(form);
 }
 
-function renderEmailCard(card, index, type, description, image) {
+function renderEmailCard(card, title, index, type, description, image) {
   card.innerHTML = '';
   let emailTitle = document.createElement('h2');
-  emailTitle.textContent += 'Title';
+  emailTitle.textContent += title;
   let emailType = document.createElement('p');
   emailType.textContent += type;
   let emailDescription = document.createElement('p');
@@ -104,7 +113,7 @@ function renderEmailCard(card, index, type, description, image) {
   editButton.textContent += 'Edit';
 
   editButton.addEventListener('click', () => {
-    editEmail(index, type, description, image);
+    editEmail(index, title, type, description, image);
   });
   card.append(emailTitle, emailType, emailDescription, emailThumbnail, editButton);
 }
