@@ -1,8 +1,8 @@
 import { fetchData } from "./fetch-data.js";
 
 const host = location.href;
-async function updateEmail(index,title, type, description, image) {
-  const emailData = { title, type, description, imageFileName: image }
+async function updateEmail(index, title, category, typeIndex, emailType, description, image) {
+  const emailData = { title, category, typeIndex, emailType, description, imageFileName: image }
 
   try {
     const response = await fetch(`${host}api/emails/${index}`, {
