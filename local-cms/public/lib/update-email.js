@@ -1,13 +1,13 @@
-import { fetchData } from "./fetch-data";
+import { fetchData } from "./fetch-data.js";
 
 const host = location.href;
-async function updateEmail(index, type, description, image) {
-  const emailData = {type, description, imageFileName: image}
+async function updateEmail(index,title, type, description, image) {
+  const emailData = { title, type, description, imageFileName: image }
 
   try {
-    const response = await fetch(`${host}api/emails/${index}`,{
+    const response = await fetch(`${host}api/emails/${index}`, {
       method: "PUT",
-      headers : {
+      headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify(emailData)
@@ -19,6 +19,7 @@ async function updateEmail(index, type, description, image) {
 
     return await fetchData(`${host}api/emails`);
   } catch (error) {
+    console.error('Network error: ', error);
   }
 }
 
