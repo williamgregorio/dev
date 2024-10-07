@@ -1,6 +1,11 @@
  async function fetchData(url) {
   try {
-    const response = await fetch(url);
+    const response = await fetch(url, {
+       method: "GET",
+       headers: {
+         "Content-Type": "application/json"
+       }
+     });
     if (!response.ok) {
       throw new Error("Network request failed.");
     }
