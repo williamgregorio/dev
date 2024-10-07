@@ -8,6 +8,12 @@ fetchData(`${host}api/emails`).then(data => {
   console.error(err);
 });
 
+fetchData(`${host}api/email-types`).then(data => {
+  console.log(typeof data);
+}).catch(err => {
+    console.error(err);
+  });
+
 function renderEmails(data) {
   let allEmails = document.querySelector('#all-emails');
   allEmails.innerHTML = '';
