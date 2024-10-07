@@ -31,6 +31,7 @@ cms.post("/api/emails", (req,res) => {
   const emails = readJSONData(emailsJSON);
   emails.push(req.body);
   writeJSONData(emailsJSON, emails);
+  res.status(201).json(req.body);
 });
 
 cms.listen(port, () => {
