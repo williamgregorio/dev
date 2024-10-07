@@ -8,8 +8,11 @@ fetchData(`${host}api/emails`).then(data => {
   console.error(err);
 });
 
+let emailTypeCategories = {};
+
 fetchData(`${host}api/email-types`).then(data => {
-  console.log(typeof data);
+  emailTypeCategories = data;
+  console.log(Object.keys(emailTypeCategories));
 }).catch(err => {
     console.error(err);
   });
@@ -52,20 +55,48 @@ function editEmail(index, title, type, description, image) {
   emailCard.innerHTML = '';
 
   let form = document.createElement('form');
-
   form.setAttribute('data-index', index);
 
   let inputTitle = document.createElement('input');
   inputTitle.value = title;
 
-  let labelForInputType = document.createElement('label');
-  labelForInputType.htmlFor = 'email-type';
-  labelForInputType.textContent = 'Enter type:';
-  let inputType = document.createElement('input');
-  inputType.value = type;
-  inputType.name = 'email-type';
-  let inputTypeDiv = document.createElement('div');
-  inputTypeDiv.append(labelForInputType, inputType);
+  let typesSelectionDiv = document.createElement('div');
+
+  let labelForCategoryType = document.createElement('label');
+  labelForCategoryType.htmlFor = 'email-category';
+  labelForCategoryType.textContent = 'Select category:';
+  let selectCategory = document.createElement('select');
+  selectCategory.name = 'email-type';
+
+  Object.keys(emailTypeCategories).forEach(category => {
+    let option = document.createElement('option');
+    option.value = category;
+    option.textContent = category;
+    if (category === type) {
+      option.selected = true;
+    }
+    selectCategory.append(option);
+  });
+
+  let labelForEmailType = document.createElement('label');
+  labelForEmailType.htmlFor = 'email-type';
+  labelForEmailType.textContent = 'Select email type:';
+  let selectEmailType = document.createElement('select');
+  selectEmailType.name = 'email-type';
+  selectEmailType.disabled = false;
+
+  selectCategory.addEventListener('change', (e) => {
+    const selectedCategory = e.target.value;
+    selectEmailType.innerHTML = '';
+    emailTypeCategories[selectedCategory].forEach(type => {
+      let option = document.createElement('option');
+      option.value = type;
+      option.textContent = type;
+      selectEmailType.append(option);
+    });
+  });
+
+  typesSelectionDiv.append(labelForCategoryType,selectCategory, labelForEmailType,selectEmailType);
 
   let labelForDescription = document.createElement('label');
   labelForDescription.htmlFor = 'email-description';
@@ -99,7 +130,7 @@ function editEmail(index, title, type, description, image) {
     }
   });
 
-  form.append(inputTitle, inputTypeDiv, inputDescriptionDiv, imageInput, cancelEditButton, submitButton);
+  form.append(inputTitle, typesSelectionDiv, inputDescriptionDiv, imageInput, cancelEditButton, submitButton);
   emailCard.append(form);
 }
 
