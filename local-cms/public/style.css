@@ -37,3 +37,14 @@ nav ul{
   align-content: center;
   gap: 12px;
 }
+
+#all-emails {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.email-card {
+  width: 33%;
+  border: 1px #eee solid;
+  border-radius: 12px;
+}
