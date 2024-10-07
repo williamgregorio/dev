@@ -5,7 +5,7 @@ const host = location.href;
 
 fetchData(`${host}api/emails`).then(data => {
   let allEmails = document.querySelector('#all-emails');
-  data.forEach((index,email) => {
+  data.forEach((email,index) => {
     console.log(index);
    allEmails.append(EmailCard(email.type, email.description, email.imageFileName));
   });
