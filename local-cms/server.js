@@ -9,6 +9,7 @@ const dataDir = path.join(__dirname, '..', 'data');
 const emailsJSON = path.join(dataDir, 'emails.json');
 const emailTypesJSON = path.join(dataDir, 'email-types.json');
 const skillsJSON = path.join(dataDir, 'skills.json');
+const sectionsJSON = path.join(dataDir, 'sections.json');
 
 cms.use(cors());
 cms.use(express.json());
@@ -30,6 +31,11 @@ cms.get("/api/email-types", (req,res) => {
 cms.get("/api/emails", (req,res) => {
   const emails = readJSONData(emailsJSON);
   res.json(emails);
+});
+
+cms.get("/api/sections", (req,res) => {
+  const sections = readJSONData(sectionsJSON);
+  res.json(sections);
 });
 
 cms.post("/api/emails", (req,res) => {
