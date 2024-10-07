@@ -18,13 +18,19 @@ function readJSONData(file) {
   return JSON.parse(fs.readFileSync(file, 'utf8'));
 }
 
-function writeJSONData(data) {
-  fs.writeFileSync(data, JSON.stringify(data, null, 2));
+function writeJSONData(file, data) {
+  fs.writeFileSync(file, JSON.stringify(data, null, 2));
 }
 
 cms.get("/api/emails", (req,res) => {
   const emails = readJSONData(emailsJSON);
   res.json(emails);
+});
+
+cms.post("/api/emails", (req,res) => {
+  const emails = readJSONData(emailsJSON);
+  emails.push(req.body);
+  writeJSONData(emailsJSON, emails);
 });
 
 cms.listen(port, () => {
