@@ -7,14 +7,15 @@ const cms = express();
 const port = 3001;
 const dataDir = path.join(__dirname, '..', 'data');
 const emailsJSON = path.join(dataDir, 'emails.json');
+const emailTypesJSON = path.join(dataDir, 'email-types.json');
+const skillsJSON = path.join(dataDir, 'skills.json');
 
-cms.user(cors());
+cms.use(cors());
 cms.use(express.json());
 cms.use(express.static(path.join(__dirname, 'public')));
 
 function readJSONData(file) {
-  const data = fs.readFileSync(file);
-  return JSON.parse(data);
+  return JSON.parse(fs.readFileSync(file, 'utf8'));
 }
 
 function writeJSONData(data) {
