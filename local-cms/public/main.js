@@ -4,6 +4,7 @@ const host = location.href;
 let main = document.querySelector('main');
 document.querySelector('#emails-link').addEventListener('click', async (e) => {
   e.preventDefault();
+  main.innerHTML = '';
   const allEmails = document.createElement('div');
   allEmails.id = 'all-emails';
   main.append(allEmails);
@@ -11,5 +12,15 @@ document.querySelector('#emails-link').addEventListener('click', async (e) => {
 });
 
 function rendersDashboard() {
-
+  main.innerHTML = '';
+  const h1 = document.createElement('h1');
+  h1.textContent = 'Welcome';
+  main.append(h1);
 }
+
+document.querySelector('#dashboard-link').addEventListener('click', (e) => {
+  e.preventDefault();
+  rendersDashboard();
+});
+
+rendersDashboard();
