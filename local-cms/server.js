@@ -1,10 +1,12 @@
 const express = require("express");
 const path = require("path");
+const cors = require('cors');
 const fs = require("node:fs");
 const cms = express();
 
 const port = 3001;
 const emailsJSON = path.join(__dirname, '..', 'data', 'emails.json');
+cms.user(cors());
 cms.use(express.json());
 cms.use(express.static(path.join(__dirname, 'public')));
 
