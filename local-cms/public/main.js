@@ -33,10 +33,36 @@ function EmailCard(type,description,image,index) {
 
   editButton.addEventListener('click', () => {
     console.log('click');
+    editEmail(index, type, description, image);
   });
 
   div.append(emailTitle,emailType,emailDescription, emailThumbnail, editButton);
   return div;
 }
 
+function editEmail(index, type, description, image) {
+  const emailCard = document.querySelector(`.email-card[data-index='${index}']`);
 
+  emailCard.innerHTML = '';
+
+  let form = document.createElement('form');
+  form.setAttribute('data-index', index);
+  let labelForInputType = document.createElement('label');
+  labelForInputType.htmlFor = 'email-type';
+  labelForInputType.textContent = 'Enter type:';
+  let inputType = document.createElement('input');
+  inputType.value = type;
+  inputType.name = 'email-type';
+  let inputTypeDiv = document.createElement('div');
+  inputTypeDiv.append(labelForInputType, inputType);
+
+
+  form.append(inputTypeDiv);
+
+  let cancelEditButton = document.createElement('button');
+  cancelEditButton.textContent = 'Cancel';
+  cancelEditButton.addEventListener('click', (e) => {
+    e.preventDefault();
+  })
+  emailCard.append(form);
+}
