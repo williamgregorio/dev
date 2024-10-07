@@ -1,20 +1,17 @@
 import { fetchData } from './lib/fetch-data.js';
+import { updateEmail } from './lib/update-email.js';
 
-const main = document.querySelector("main");
 const host = location.href;
-
 fetchData(`${host}api/emails`).then(data => {
   let allEmails = document.querySelector('#all-emails');
-  data.forEach((email,index) => {
-    console.log(index);
-   allEmails.append(EmailCard(email.type, email.description, email.imageFileName, index));
+  data.forEach((email, index) => {
+    allEmails.append(EmailCard(email.type, email.description, email.imageFileName, index));
   });
-
 }).catch(err => {
-    console.error(err);
-  })
+  console.error(err);
+})
 
-function EmailCard(type,description,image,index) {
+function EmailCard(type, description, image, index) {
   let div = document.createElement('div');
   div.setAttribute('data-index', index);
   div.className = 'email-card';
@@ -36,16 +33,16 @@ function EmailCard(type,description,image,index) {
     editEmail(index, type, description, image);
   });
 
-  div.append(emailTitle,emailType,emailDescription, emailThumbnail, editButton);
+  div.append(emailTitle, emailType, emailDescription, emailThumbnail, editButton);
   return div;
 }
 
 function editEmail(index, type, description, image) {
   const emailCard = document.querySelector(`.email-card[data-index='${index}']`);
-
   emailCard.innerHTML = '';
 
   let form = document.createElement('form');
+
   form.setAttribute('data-index', index);
   let labelForInputType = document.createElement('label');
   labelForInputType.htmlFor = 'email-type';
@@ -56,14 +53,38 @@ function editEmail(index, type, description, image) {
   let inputTypeDiv = document.createElement('div');
   inputTypeDiv.append(labelForInputType, inputType);
 
+  let labelForDescription = document.createElement('label');
+  labelForDescription.htmlFor = 'email-description';
+  labelForDescription.textContent = 'Enter description';
+  let inputDescription = document.createElement('textarea');
+  inputDescription.value = description;
+  inputDescription.name = 'email-description';
+  let inputDescriptionDiv = document.createElement('div');
+  inputDescriptionDiv.append(labelForDescription, inputDescription);
+
+
+  let imageInput = document.createElement('input');
+  imageInput.value = image;
 
   let cancelEditButton = document.createElement('button');
   cancelEditButton.textContent = 'Cancel';
   cancelEditButton.addEventListener('click', (e) => {
     e.preventDefault();
     renderEmailCard(emailCard, index, type, description, image);
-  })
-  form.append(inputTypeDiv, cancelEditButton);
+  });
+
+  let submitButton = document.createElement('button');
+  submitButton.textContent = 'Save';
+  submitButton.addEventListener('click', async (e) => {
+    try {
+      const updatedData = await updateEmail(index, inputType.value, inputDescription.value, imageInput.value);
+
+      //rnder emails functions here
+    } catch (errr) {
+    }
+  });
+
+  form.append(inputTypeDiv, inputDescriptionDiv, imageInput, cancelEditButton);
   emailCard.append(form);
 }
 
