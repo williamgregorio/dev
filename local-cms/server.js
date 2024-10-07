@@ -34,6 +34,19 @@ cms.post("/api/emails", (req,res) => {
   res.status(201).json(req.body);
 });
 
+cms.put("/api/emails/:index", (req,res) => {
+  const index = req.params.index;
+  const emails = readJSONData(emailsJSON);
+
+  if (emails.length >= 0 && index < emails.length) {
+    emails[index] = req.body;
+    writeJSONData(emailsJSON, emails);
+    res.json(emails[index]);
+  } else {
+    res.status(404).json({error: 'Email not found on file.'});
+  }
+});
+
 cms.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 })
