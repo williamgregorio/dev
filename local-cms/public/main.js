@@ -57,12 +57,33 @@ function editEmail(index, type, description, image) {
   inputTypeDiv.append(labelForInputType, inputType);
 
 
-  form.append(inputTypeDiv);
-
   let cancelEditButton = document.createElement('button');
   cancelEditButton.textContent = 'Cancel';
   cancelEditButton.addEventListener('click', (e) => {
     e.preventDefault();
+    renderEmailCard(emailCard, index, type, description, image);
   })
+  form.append(inputTypeDiv, cancelEditButton);
   emailCard.append(form);
+}
+
+function renderEmailCard(card, index, type, description, image) {
+  card.innerHTML = '';
+  let emailTitle = document.createElement('h2');
+  emailTitle.textContent += 'Title';
+  let emailType = document.createElement('p');
+  emailType.textContent += type;
+  let emailDescription = document.createElement('p');
+  emailDescription.textContent = description;
+  let emailThumbnail = document.createElement('img');
+  emailThumbnail.setAttribute('src', `http://127.0.0.1:8080/assets/${image}`);
+  emailThumbnail.setAttribute('width', '100px');
+
+  let editButton = document.createElement('button');
+  editButton.textContent += 'Edit';
+
+  editButton.addEventListener('click', () => {
+    editEmail(index, type, description, image);
+  });
+  card.append(emailTitle, emailType, emailDescription, emailThumbnail, editButton);
 }
