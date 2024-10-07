@@ -1,4 +1,5 @@
 import { rendersEmailPage } from './lib/emails.js';
+import { renderSectionPage } from './lib/sections.js';
 
 const host = location.href;
 let main = document.querySelector('main');
@@ -15,6 +16,7 @@ function rendersDashboard() {
   main.innerHTML = '';
   const h1 = document.createElement('h1');
   h1.textContent = 'Welcome';
+  renderSectionPage();
   main.append(h1);
 }
 
