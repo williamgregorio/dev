@@ -22,6 +22,11 @@ function writeJSONData(file, data) {
   fs.writeFileSync(file, JSON.stringify(data, null, 2));
 }
 
+cms.get("/api/email-types", (req,res) => {
+  const emailTypes = readJSONData(emailTypesJSON);
+  res.json(emailTypes);
+});
+
 cms.get("/api/emails", (req,res) => {
   const emails = readJSONData(emailsJSON);
   res.json(emails);
