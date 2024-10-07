@@ -1,5 +1,5 @@
-import { fetchData } from './lib/fetch-data.js';
-import { updateEmail } from './lib/update-email.js';
+import { fetchData } from './fetch-data.js';
+import { updateEmail } from './update-email.js';
 
 const host = location.href;
 let emailTypeCategories = {};
