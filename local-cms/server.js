@@ -5,7 +5,9 @@ const fs = require("node:fs");
 const cms = express();
 
 const port = 3001;
-const emailsJSON = path.join(__dirname, '..', 'data', 'emails.json');
+const dataDir = path.join(__dirname, '..', 'data');
+const emailsJSON = path.join(dataDir, 'emails.json');
+
 cms.user(cors());
 cms.use(express.json());
 cms.use(express.static(path.join(__dirname, 'public')));
