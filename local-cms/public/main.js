@@ -84,7 +84,7 @@ function editEmail(index, title, type, description, image) {
   cancelEditButton.textContent = 'Cancel';
   cancelEditButton.addEventListener('click', (e) => {
     e.preventDefault();
-    renderEmailCard(emailCard, index, type, description, image);
+    renderEmailCard(emailCard, title, index, type, description, image);
   });
 
   let submitButton = document.createElement('button');
