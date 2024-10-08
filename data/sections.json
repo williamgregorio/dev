@@ -1,8 +1,49 @@
 {
   "sections": [
     {
-      "sectionIdName": "hero",
-      "sectionHTML": ""
+      "id": "hero",
+      "type": "hero",
+      "content": {
+        "tagline": "Available for hire",
+        "header": "Looking for the right Email Developer?",
+        "description": [
+          "I don't just code emails, I collaborate and develop strategic emails with your team to bring the best result.",
+          "Don't believe me?",
+          "Scroll down further to take a look."
+        ],
+        "image": "assets/profile-cover.png"
+      }
+    },
+    {
+      "id": "skills",
+      "type": "skills",
+      "content": {
+        "header": "Skills",
+        "skillList": []
+      }
+    },
+    {
+      "id": "emails",
+      "type": "emails",
+      "content": {
+        "header": "Emails",
+        "emailList": []
+      }
+    },
+    {
+      "id": "about",
+      "type": "about",
+      "content": {
+        "image": "assets/hands-on-laptop.jpg",
+        "header": "About",
+        "paragraphs": [
+          "Thank you for viewing my work, as you can see my goal is to develop impactful and engaging email campaigns.",
+          "I'm William Gregorio, it's a pleasure to meet you. My approach ensures that all emails adhere to regulations like CAN-SPAM, as well as accessibility standards such as WCAG (Web Content Accessibility Guidelines).",
+          "I can integrate email campaigns into custom web strategies, plus I have experience in developing and thinking outside the box, since you will need someone who is able to think and solve challenging obstacles that will return valuable results.",
+          "In summary, my attention to detail, adherence to best practices, and the willing to learn, ensures good results in email development. I find joy in the small things, as they often hold the most value and bring the best return."
+        ]
+      }
     }
-  ] 
+  ]
 }
+

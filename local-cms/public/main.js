@@ -1,24 +1,28 @@
-import { fetchData } from './lib/fetch-data.js';
-import { TotalEmailsCard } from './lib/components/TotalEmailsCard.js';
+import { rendersEmailPage } from './lib/emails.js';
+import { renderSectionPage } from './lib/sections.js';
 
-const main = document.querySelector("main");
 const host = location.href;
-console.log(host);
-fetchData(`${host}api/emails`).then(data => {
-  renderTotalEmails(data);
+let main = document.querySelector('main');
+document.querySelector('#emails-link').addEventListener('click', async (e) => {
+  e.preventDefault();
+  main.innerHTML = '';
+  const allEmails = document.createElement('div');
+  allEmails.id = 'all-emails';
+  main.append(allEmails);
+  await rendersEmailPage();
+});
 
-  main.append(TotalEmailsCard(data.length, "Total emails:"));
-
-}).catch(err => {
-    console.error(err);
-  })
-
-
-// dashboard present emails
-
-function renderTotalEmails(data) {
-  for (let i = 0; i < data.length; i++) {
-    console.log(data[i]);
-  }
+function rendersDashboard() {
+  main.innerHTML = '';
+  const h1 = document.createElement('h1');
+  h1.textContent = 'Welcome';
+  renderSectionPage();
+  main.append(h1);
 }
 
+document.querySelector('#dashboard-link').addEventListener('click', (e) => {
+  e.preventDefault();
+  rendersDashboard();
+});
+
+rendersDashboard();
