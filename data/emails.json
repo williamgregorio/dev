@@ -5,7 +5,8 @@
     "emailTypeIndex": 0,
     "emailType": "Product announcements",
     "description": "This is a product announcement email for a gluten free bakery online e-commerce store, written with raw HTML tables, or around 195 lines of code, with a final delivery time of 1 hour and 14 minutes. It encourages customers to try it and shop now, if that didn't work it also recommends other products to make sure customers can at least visit the store.",
-    "imageFileName": "katz-newsletter-portfolio.png"
+    "imageFileName": "katz-newsletter-portfolio.png",
+    "viewOnlineFileName": "katz-promotional-product-announcement.html"
   },
   {
     "title": "Stripe",
@@ -13,7 +14,8 @@
     "emailTypeIndex": 4,
     "emailType": "Payment receipt",
     "description": "This is Stripe's first transaction email that is sent out to new business owners, written with raw HTML tables, around 174 lines of code, that took around 1 hour and 23 minutes. While not a production level email, it shows the power, a framework like MJML4 can have in time reduction.",
-    "imageFileName": "stripe-first-transaction.png"
+    "imageFileName": "stripe-first-transaction.png",
+    "viewOnlineFileName": "stripe-transactional-payment-receipt.html"
   },
   {
     "title": "Instacart William",
@@ -21,7 +23,8 @@
     "typeIndex": 0,
     "emailType": "Product announcements",
     "description": "Known as Maplebear Inc. or DBA Instacart, that operates grocery delivery services, written with MJML4 and tested with Litmus, for a discount promotional campaign, and additional call to actions for increase in customer website traffic.",
-    "imageFileName": "instacart-discount-promo.png"
+    "imageFileName": "instacart-discount-promo.png",
+    "viewOnlineFileName": "instacart-discount-promotional.html"
   },
   {
     "title": "Spectrum",
@@ -29,7 +32,8 @@
     "typeIndex": 0,
     "emailType": "Product announcements",
     "description": "Inspired by the new release of the WiFi 6 Router by Spectrum. I designed it with Figma than wrote it with MJML4 for faster development time, giving the email strong support for major email clients like Outlook.",
-    "imageFileName": "spectrum-promo-pa.png"
+    "imageFileName": "spectrum-promo-pa.png",
+    "viewOnlineFileName": "spectrum-promotional-product-announcements.html"
   },
   {
     "title": "Lusso Napoli",
@@ -37,6 +41,7 @@
     "typeIndex": 0,
     "emailType": "Abondened cart",
     "description": "An abandoned cart email used for high end bespoke dress shoes online store. Designed with Figma and written in MJML4 with support with major email clients, it's also spam compliant and makes customer feel special.",
-    "imageFileName": "lussonapoli-beh-aban-cart.png"
+    "imageFileName": "lussonapoli-beh-aban-cart.png",
+    "viewOnlineFileName": "lussonapoli-behavioral-abandoned-card.html"
   }
 ]
