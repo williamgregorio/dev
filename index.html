@@ -13,6 +13,26 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="style.css" />
+  <!-- Google tag (gtag.js) -->
+  <script>
+    if (window.location.hostname !== 'localhost') {
+      (function() {
+        var script = document.createElement('script');
+        script.src = 'https://https://www.googletagmanager.com/gtag/js?id=G-RXX6VVXNBH';
+        script.async = true;
+        document.head.append(script);
+        
+        script.onload = function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-RXX6VVXNBH');
+        }
+      })
+    } else {
+      console.info('GA4 Disabled on local machine.');
+    }
+  </script>
 </head>
 <body>
   <header>
