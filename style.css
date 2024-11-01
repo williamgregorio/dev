@@ -67,6 +67,18 @@ a {
   color: inherit;
 }
 
+select {
+  border: 1px #ddd solid;
+  border-radius: var(--soft-radius);
+  padding: 4px;
+}
+
+.category-filter {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
 button {
   font-family: "Inter", sans-serif;
   padding: 10px 20px;
