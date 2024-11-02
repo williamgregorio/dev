@@ -6,7 +6,7 @@
   { "name": "Mautic", "path": "mautic" },
   { "name": "Matomo", "path": "matomo" },
   { "name": "MJML", "path": "mjml" },
-  { "name": "GA4", "path": "google-analytics" },
+  { "name": "Litmus", "path": "litmus" },
   { "name": "Figma", "path": "figma" },
   { "name": "Klaviyo", "path": "klaviyo" },
   { "name": "WordPress", "path": "wordpress" },
