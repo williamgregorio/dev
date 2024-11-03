@@ -1,8 +1,6 @@
 <mjml>
   <mj-head>
-    <mj-title>
-      Lusso Napoli - Abandoned Cart
-    </mj-title>
+    <mj-title>Lusso Napoli - Behavioral Email for Abandoned Cart</mj-title>
     <mj-font name="Inter" href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" />
     <mj-style>
       .top-border > table{
@@ -12,7 +10,7 @@
 
       @media only screen and (max-width: 480px) {
         .mobile-paddings table tr > td {
-          padding: 0 10px 0 10px !important;
+          padding: 0;
         }
 
         .mobile-gap {
@@ -25,42 +23,39 @@
     <mj-wrapper padding-left="60px" padding-right="60px" css-class="mobile-paddings">
       <mj-section padding="0">
         <mj-column>
-          <mj-image src="assets/lusso-napoli-logo--png.png" alt="lusso napoli logo" width="216px" align="left" padding="0" />
+          <mj-image src="assets/lusso-napoli-logo--png.png" alt="lusso napoli logo" width="116px" align="left" padding="0" />
         </mj-column>
       </mj-section>
       <mj-section padding="0">
-        <mj-column>
-        <mj-spacer height="20px" />
-          <mj-text font-family="Inter" font-size="50px" font-weight="bold" align="center" color="#1C1210" letter-spacing="0.5px" line-height="0.9" padding="0">
+        <mj-column padding-top="12px">
+          <mj-text font-family="Inter" font-size="48px" font-weight="bold" align="left" color="#1D3021" letter-spacing="1px" line-height="40px" padding="0">
             What do you think?
           </mj-text>
           <mj-spacer height="10px" />
-          <mj-text font-size="24px" font-family="Inter" font-weight="200" align="center" padding="0" letter-spacing="1px">
-            <p>William, we noticed you left these in your cart, because we care about you, we can give you <span style="font-weight:bold;">15% off</span> and <span style="font-weight:bold;">free shipping</span> on us.</p>
+          <mj-text color="#262524" font-size="18px" line-height="1.5em" font-family="Inter,Arial" align="left" padding="0">
+            <p>{{first_name}}, we noticed these are still in your cart, don't tell anyone, but we can give you <span style="font-weight:bold;text-decoration:underline;">20% off and free shipping</span> on us.</p>
             </p>
           </mj-text>
         </mj-column>
       </mj-section>
 
       <mj-section padding="0">
-       <mj-column>
-
+       <mj-column border="1px #eee solid">
        <mj-spacer height="20px"/>
-
-        <mj-text font-family="Inter" align="center" font-size="24px" font-style="italic" font-weight="200" color="#1C1210" padding="0">
-          Gaziano & Girling St. James II in Margaux Patina MH71
+        <mj-text font-family="Inter" align="center" font-size="16px" font-weight="200" color="#1C1210" padding="0">
+          Gaziano & Girling St. James II in <span style="font-style:italic">Margaux</span> Patina MH71
         </mj-text>
 
         <mj-spacer height="20px" />
 
         <mj-image src="assets/gaz-mh71.png" border-radius="12px" alt="Image description" />
 
-        <mj-button font-family="Inter" font-size="28px" font-weight="bold" color="#fff" background-color="#28462E" width="100%" border-radius="200px" border="2px #DDD1BA solid" href="#">
-          Check out now
+        <mj-button font-family="Inter" font-size="16px" font-weight="bold" color="#fff" background-color="#28462E" width="100%" border-radius="7px" border="1px #DDD1BA solid" href="#">
+          Continue purchase
         </mj-button>
 
-        <mj-text align="center" font-size="24px" padding="0" font-family="Inter" padding="0">
-          <p style="text-decoration: underline; font-weight:bold;">USE CODE: <span style="font-style:italic;">LUSSO</span></p>
+        <mj-text align="center" font-size="14px" padding="0" font-family="Inter" padding="0">
+          <p style="text-decoration: underline; font-weight:bold;text-transform:uppercase;">apply code: <span style="font-style:italic;">{{coupon_code}}</span></p>
         </mj-text>
 
        </mj-column>
@@ -69,89 +64,81 @@
       <mj-section>
         <mj-column>
         <mj-spacer height="20px" />
-          <mj-text align="center" font-size="40px" font-family="Inter" font-weight="bold" >
+          <mj-text align="center" font-size="42px" font-family="Inter" font-weight="bold" padding="0" color="#1C1210">
             Great minds think alike
           </mj-text>
           <mj-spacer height="20px" />
-          <mj-text font-family="Inter" font-size="24px" align="center" padding="0" font-weight="300">
-            This is why you choose us, over others.
+          <mj-text color="#262524" font-family="Inter" font-size="18px" align="center" padding="0" font-weight="400">
+            A reminder on why you chose us, over others.
           </mj-text>
+          <mj-spacer height="20px" />
         </mj-column>
       </mj-section>
-      <mj-spacer height="20px" />
       <mj-section padding="0">
-        <mj-group>
-          <mj-column background-color="#eee" border-radius="24px" width="45%">
-            <mj-image src="assets/shipping-insurance-icon.png" alt="Image description" width="58px"  />
-            <mj-text font-weight="bold" align="center" font-size="24px" font-family="Inter" padding="0 0 20px 0">
+          <mj-column background-color="#FBFAFA" border-radius="24px" width="45%">
+            <mj-image src="assets/shipping-insurance-icon.png" alt="Image description" width="32px"  />
+            <mj-text font-weight="bold" align="center" font-size="16px" font-family="Inter" padding="0 0 20px 0">
               Shipping insurance
             </mj-text>
           </mj-column>
-          <mj-column width="25px"></mj-column>
-          <mj-column background-color="#eee" border-radius="24px" width="45%">
-ii2i2          <mj-image src="assets/2-day-shipping-icon.png" alt="Image description" width="58px" />
-          <mj-text font-weight="bold" align="center" font-size="24px" font-family="Inter" padding="0 0 20px 0">
+          <mj-column width="25px" padding="7px"></mj-column>
+          <mj-column background-color="#FCFCFC" border-radius="24px" width="45%">
+ii2i2          <mj-image src="assets/2-day-shipping-icon.png" alt="Image description" width="32px" />
+          <mj-text font-weight="bold" align="center" font-size="16px" font-family="Inter" padding="0 0 20px 0">
             Reliable 2 day delivery 
           </mj-text>
           </mj-column>
-        </mj-group>
       </mj-section>
-      <mj-spacer height="20px" />
       <mj-section>
-        <mj-group>
-          <mj-column background-color="#eee" border-radius="24px" width="45%">
-            <mj-image src="assets/247-customer-support-icon.png" alt="Image description" width="58px" />
-            <mj-text font-weight="bold" align="center" font-size="24px" font-family="Inter" padding="0 0 20px 0">
+          <mj-column background-color="#FCFCFC" border-radius="24px" width="45%">
+            <mj-image src="assets/247-customer-support-icon.png" alt="Image description" width="32px" />
+            <mj-text font-weight="bold" align="center" font-size="16px" font-family="Inter" padding="0 0 20px 0">
               24/7 customer support
             </mj-text>
           </mj-column>
-          <mj-column width="25px"></mj-column>
-          <mj-column background-color="#eee" border-radius="24px" width="45%">
-            <mj-image src="assets/refund-icon.png" alt="Image description" width="58px" />
-            <mj-text font-weight="bold" align="center" font-size="24px" font-family="Inter" padding="0 0 20px 0">
+          <mj-column width="25px" padding="7px"></mj-column>
+          <mj-column background-color="#FBFAFA" border-radius="24px" width="45%" padding="0">
+            <mj-image src="assets/refund-icon.png" alt="Image description" width="32px" />
+            <mj-text font-weight="bold" align="center" font-size="16px" font-family="Inter" padding="0 0 20px 0">
               15 day reimbursement
             </mj-text>
           </mj-column>
-        </mj-group>
       </mj-section>
-      <mj-spacer height="20px" />
       <mj-section padding="0">
         <mj-column>
-          <mj-text font-family="Inter" font-size="40px" font-weight="bold" align="center">
-            We thought you'd love these!
+        <mj-spacer height="20px" />
+          <mj-text font-family="Inter" font-size="42px" font-weight="bold" align="left" padding="0">
+            We think you'd love these!
           </mj-text>
+          <mj-spacer height="20px" />
         </mj-column>
       </mj-section>
-      <mj-spacer height="20px" />
       <mj-section padding="0"> 
-        <mj-group>
           <mj-column padding="0" width="45%">
-            <mj-image src="assets/vass-shoes-alt.png" width="287.5px" alt="Image description" border="1px #000000 solid" border-radius="12px" padding="0" align="left" />
+            <mj-image src="assets/vass-shoes-alt.png" width="287.5px" alt="Image description" border="1px #eee solid" border-radius="12px" padding="0" align="left" />
             <mj-spacer height="20px" />
             <mj-text align="center" padding="0" font-family="Inter">
               Vass Shoes Alt English II
             </mj-text>
             <mj-spacer height="20px" />
-            <mj-button width="100%" padding="0" background-color="#F0E4CF" color="#121212" font-weight="bold" font-family="Inter" border-radius="12px" border="1px #28462E solid" font-size="16px" href="#">
+            <mj-button width="100%" padding="0" background-color="#F0E4CF" color="#121212" font-weight="bold" font-family="Inter" border-radius="12px" border="1px #7D7E7F solid" font-size="16px" href="#">
               Learn more
             </mj-button>
           </mj-column>
           <mj-column width="45px"></mj-column>
           <mj-column width="45%" padding="0">
-            <mj-image src="assets/saint-crispins-523.png" width="287.5px" alt="Image description" border="1px #000000 solid" border-radius="12px" padding="0" align="right" />
+            <mj-image src="assets/saint-crispins-523.png" width="287.5px" alt="Image description" border="1px #eee solid" border-radius="12px" padding="0" align="right" />
             <mj-spacer height="20px" />
             <mj-text align="center" padding="0" font-family="Inter">
               Saint Crispin's 523 Croc Oxford
             </mj-text>
             <mj-spacer height="20px" />
-            <mj-button width="100%" padding="0" background-color="#F0E4CF" color="#121212" font-weight="bold" font-family="Inter" border-radius="12px" border="1px #28462E solid" font-size="16px" href="button" >
+            <mj-button width="100%" padding="0" background-color="#F0E4CF" color="#121212" font-weight="bold" font-family="Inter" border-radius="12px" border="1px #7D7E7F solid" font-size="16px" href="button" >
               Learn more
             </mj-button>
           </mj-column>
-        </mj-group>
       </mj-section>
     </mj-wrapper>
-    <mj-spacer height="20px" />
     <mj-section padding="0" background-color="#28462E" padding-left="60px" padding-right="60px" padding-top="33px">
       <mj-column> 
         <mj-text color="#fff" font-family="Inter" padding="0">
@@ -172,6 +159,5 @@ ii2i2          <mj-image src="assets/2-day-shipping-icon.png" alt="Image descrip
         <mj-image src="assets/lusso-napoli-logo--png.png" alt="Image description" width="216px" padding="0" align="right" />
       </mj-column>
     </mj-section>
-
   </mj-body>
-</mjmlj
+</mjml>
