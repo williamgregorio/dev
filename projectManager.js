@@ -46,3 +46,18 @@ function listProjects() {
   });
   return projects;
 }
+
+function selectProject(projects) {
+  rl.question("Select a project number to set for nodemon.json: ", (number) => {
+    const index = parseInt(number) - 1;
+    if (index >= 0 && index < projects.length) {
+      const selectedProject = projects[index];
+      updateNodemonConfig(selectedProject);
+    } else {
+      console.log("Invalid number or not a number."):
+    }
+    rl.close();
+  });
+}
+
+
