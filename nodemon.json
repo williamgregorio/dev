@@ -1,8 +1,8 @@
 {
   "watch": [
-    "emails/development/spectrum",
+    "emails/development/contracr-bridge-realty",
     "local-cms"
   ],
   "ext": "mjml, js, json",
-  "exec": "mjml emails/development/spectrum/index.mjml -o emails/development/spectrum/index.html && node local-cms/server.js"
+  "exec": "mjml emails/development/contracr-bridge-realty/index.mjml -o emails/development/contracr-bridge-realty/index.html && node local-cms/server.js"
 }
