@@ -35,3 +35,14 @@ function createProjectName(projectName) {
   }
 }
 
+function listProjects() {
+  const projects = fs.readdirSync(emailProjectPath).filter(file => {
+    fs.statSync(path.join(emailProjectPath, file)).isDirectory();
+  });
+
+  console.log("Available projects:");
+  projects.forEach((project, index) => {
+    console.log(`(${index + 1}). ${project}`);
+  });
+  return projects;
+}
