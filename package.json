@@ -4,8 +4,8 @@
   "description": "development",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon",
-    "serve": "http-server -p 8080",
+    "dev-email": "nodemon",
+    "serve-local-cms": "http-server -p 8080",
     "start": "concurrently \"npm run dev\" \"npm run serve\""
   },
   "author": "William Gregorio",
