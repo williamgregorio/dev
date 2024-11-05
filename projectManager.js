@@ -6,3 +6,5 @@ const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 });
+
+const emailProjectPath = path.join(process.cwd(), "emails", "development");
