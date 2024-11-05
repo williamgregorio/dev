@@ -8,28 +8,28 @@ const rl = readline.createInterface({
 });
 
 const emailProjectPath = path.join(process.cwd(), "emails", "development");
-console.log(emailProjectPath);
 
 function createProject(projectName) {
   const projectDir = path.join(emailProjectPath, projectName);
-  const mjmlTemplateFile = path.join(emailProjectPath, "index.mjml");
-  const assetsDir = path.join(emailProjectPath, "assets");
-  const emailMJMLTemplate = `
-  <mjml>
-    <mj-head>
-      <mj-title>
+  const mjmlTemplateFile = path.join(emailProjectPath, projectName, "index.mjml");
+  const htmlTemplateFile = path.join(emailProjectPath, projectName, "index.html");
+  const assetsDir = path.join(emailProjectPath, projectName, "assets");
+  const emailMJMLTemplate = `<mjml>
+  <mj-head>
+    <mj-title>
       
-      </mj-title>
-    </mj-head>
-    <mj-body>
+     </mj-title>
+   </mj-head>
+   <mj-body>
 
-    </mj-body>
-  </mjml>`;
+   </mj-body>
+</mjml>`;
 
   if (!fs.existsSync(projectDir)) {
     fs.mkdirSync(projectDir, { recursive: true });
     fs.mkdirSync(assetsDir);
     fs.writeFileSync(mjmlTemplateFile, emailMJMLTemplate);
+    fs.writeFileSync(htmlTemplateFile, "MJML data needs to be compiled...");
     console.log(`New project ${projectName}, has been created.`);
   } else {
     console.log(`Project: ${projectName}, already exists.`);
@@ -77,7 +77,7 @@ function main() {
   rl.question("Enter a new project name or press [Enter] to list projects: ", (projectName) => {
     if (projectName) {
       createProject(projectName);
-      updateNameConfig(projectName);
+      updateNodemonConfig(projectName);
       rl.close();
     } else {
       const projects = listProjects();
