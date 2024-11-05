@@ -1,8 +1,8 @@
 {
   "watch": [
-    "emails/development/contracr-bridge-realty",
+    "emails/development/instacart",
     "local-cms"
   ],
   "ext": "mjml, js, json",
-  "exec": "mjml emails/development/contracr-bridge-realty/index.mjml -o emails/development/contracr-bridge-realty/index.html && node local-cms/server.js"
+  "exec": "mjml emails/development/instacart/index.mjml -o emails/development/instacart/index.html && node local-cms/server.js"
 }
