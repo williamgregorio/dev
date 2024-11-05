@@ -60,4 +60,14 @@ function selectProject(projects) {
   });
 }
 
+function updateNodemonConfig(projectName) {
+  const nodemonConfigFile = path.join(process.cwd(), "nodemon.json");
+  const nodemonConfig = {
+    watch: [`emails/development/${projectName}`, "local-cms"],
+    ext: "mjml, js, json",
+    exec: `mjml emails/development/${projectName}/index.mjml -o emails/development/${projectName}/index.html && node local-cms/server.js`
+  };
 
+  fs.writeFileSync(nodemonConfigFile, JSON.stringify(nodemonConfig, null, 2));
+  console.log(`nodemon.json updated to watch project: ${projectName}.`);
+}
