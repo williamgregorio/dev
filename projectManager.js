@@ -8,8 +8,9 @@ const rl = readline.createInterface({
 });
 
 const emailProjectPath = path.join(process.cwd(), "emails", "development");
+console.log(emailProjectPath);
 
-function createProjectName(projectName) {
+function createProject(projectName) {
   const projectDir = path.join(emailProjectPath, projectName);
   const mjmlTemplateFile = path.join(emailProjectPath, "index.mjml");
   const assetsDir = path.join(emailProjectPath, "assets");
@@ -25,7 +26,7 @@ function createProjectName(projectName) {
     </mj-body>
   </mjml>`;
 
-  if (!fs.existsSysnc(projectDir)) {
+  if (!fs.existsSync(projectDir)) {
     fs.mkdirSync(projectDir, { recursive: true });
     fs.mkdirSync(assetsDir);
     fs.writeFileSync(mjmlTemplateFile, emailMJMLTemplate);
@@ -37,7 +38,7 @@ function createProjectName(projectName) {
 
 function listProjects() {
   const projects = fs.readdirSync(emailProjectPath).filter(file => {
-    fs.statSync(path.join(emailProjectPath, file)).isDirectory();
+    return fs.statSync(path.join(emailProjectPath, file)).isDirectory()
   });
 
   console.log("Available projects:");
@@ -54,7 +55,7 @@ function selectProject(projects) {
       const selectedProject = projects[index];
       updateNodemonConfig(selectedProject);
     } else {
-      console.log("Invalid number or not a number."):
+      console.log("Invalid number or not a number.");
     }
     rl.close();
   });
@@ -71,3 +72,18 @@ function updateNodemonConfig(projectName) {
   fs.writeFileSync(nodemonConfigFile, JSON.stringify(nodemonConfig, null, 2));
   console.log(`nodemon.json updated to watch project: ${projectName}.`);
 }
+
+function main() {
+  rl.question("Enter a new project name or press [Enter] to list projects: ", (projectName) => {
+    if (projectName) {
+      createProject(projectName);
+      updateNameConfig(projectName);
+      rl.close();
+    } else {
+      const projects = listProjects();
+      selectProject(projects);
+    }
+  });
+}
+
+main();
