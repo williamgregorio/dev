@@ -125,8 +125,8 @@ main {
 
 header {
   padding-top: var(--top-padding);
-  padding-bottom: var(--bottom-padding);
-  padding-left: var(--side-padding-bg);
+  margin-bottom: var(--bottom-padding);
+  margin-left: var(--side-padding-bg);
   padding-right: var(--side-padding-bg);
   transition: background-color 0.2s ease;
   position: -webkit-sticky;
@@ -141,12 +141,12 @@ nav {
 }
 
 nav > a img {
-  width: 42px;
+  width: var(--logo-width);
   align-content: flex-end;
 }
 
 nav ul > li a {
-  font-weight: 600;
+  font-weight: var(--nav-anchor-weight);
 }
 ul {
   display: flex;
