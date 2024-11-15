@@ -266,8 +266,8 @@ section {
   display: flex;
   flex-direction: column;
   gap: var(--header-gap);
-  padding-left: 5em;
-  padding-right: 5em;
+  padding-left: 4em;
+  padding-right: 4em;
 }
 
 #skill-list {
@@ -293,7 +293,7 @@ section {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 101px;
+  height: 100px;
   width: 50%;
   margin: 0 auto;
   object-fit: cover;
@@ -309,7 +309,7 @@ section {
 #email-list {
   background-color: var(--background-color);
   border-radius: var(--soft-radius);
-  padding: 3em;
+  padding: 2em;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
@@ -320,7 +320,13 @@ section {
 .email-card-meta {
   display: flex;
   flex-direction: column;
-  gap: 17px;
+  gap: 16px;
+}
+
+.category-filter {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
 }
 
 .email-category-tag {
@@ -339,14 +345,14 @@ section {
 
 .email-image > div {
   border: 2px var(--surface-color) solid;
-  height: 20rem;
+  height: 19rem;
   background-repeat: no-repeat;
-  background-position: top center scroll;
+  background-position: top center;
   box-shadow: var(--soft-box-shadow);
   background-size: cover;
   border-radius: var(--soft-radius);
   filter: grayscale(98%);
-  transition: filter 1.4s ease-in-out;
+  transition: filter 0.2s ease-in-out;
 }
 
 .email-image:hover > div {
@@ -359,7 +365,7 @@ section {
   justify-content: space-between;
   gap: var(--header-gap);
   border: 3px var(--divider-color) solid;
-  padding: 2em;
+  padding: 1em;
   border-radius: var(--soft-radius);
   box-shadow: var(--soft-box-shadow);
   background-color: var(--overlay-light-color);
@@ -443,6 +449,14 @@ section {
     grid-template-columns: 1fr;
     text-align: center;
   }
+
+  #email-list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #about {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* =========== Mobile =========== */
@@ -457,6 +471,18 @@ section {
 
   p {
     font-size: var(--font-size-small);
+  }
+
+  #email-list {
+    grid-template-columns: 1fr;
+  }
+
+  .about-images {
+    display: none;
+  }
+
+  #skill-list {
+    grid-template-columns: 1fr;
   }
 }
 
