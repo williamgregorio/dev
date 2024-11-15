@@ -6,5 +6,5 @@
 ### **Local development dependencies**:
 - concurrently
 - express
+- http-server
 
-thinking...
