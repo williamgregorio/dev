@@ -125,8 +125,8 @@ main {
 
 header {
   padding-top: var(--top-padding);
-  margin-bottom: var(--bottom-padding);
-  margin-left: var(--side-padding-bg);
+  padding-bottom: var(--bottom-padding);
+  padding-left: var(--side-padding-bg);
   padding-right: var(--side-padding-bg);
   transition: background-color 0.2s ease;
   position: -webkit-sticky;
@@ -141,12 +141,12 @@ nav {
 }
 
 nav > a img {
-  width: var(--logo-width);
+  width: 42px;
   align-content: flex-end;
 }
 
 nav ul > li a {
-  font-weight: var(--nav-anchor-weight);
+  font-weight: 600;
 }
 ul {
   display: flex;
@@ -241,7 +241,6 @@ nav a.active {
 }
 
 #hero-content {
-  align-content: start;
   display: flex;
   flex-direction: column;
   gap: var(--header-gap);
@@ -320,7 +319,7 @@ nav a.active {
 }
 
 .email-category {
-  padding: 5px;
+  padding: 6px;
   font-weight: bold;
   cursor: default;
   color: #fff;
@@ -474,3 +473,4 @@ nav a.active {
     padding-right: 1em;
   }
 }
+
