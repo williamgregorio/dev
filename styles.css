@@ -13,9 +13,11 @@
   --top-padding: 2em;
   --bottom-padding: 2em;
   --side-padding-bg: 14em;
+  --soft-padding: 8px;
   --header-gap: 18px;
   --small-gap: 8px;
-  --text-gap: 16px;
+  --text-gap: 17px;
+  --generic-gap: 12px;
   --soft-radius: 8px;
   --soft-box-shadow: 0px 4px 15px -16px rgba(0,0,0,0.1);
 
@@ -333,12 +335,29 @@ section {
   display: flex;
 }
 
+.email-category-sub-card {
+  border: 3px var(--divider-color) solid;
+  border-radius: var(--soft-radius);
+  display: flex;
+  flex-direction: column;
+  gap: var(--small-gap);
+  box-shadow: var(--soft-box-shadow);
+  padding: var(--soft-padding);
+}
+
+.email-category-sub-card > span:first-child {
+  font-weight: 600;
+}
+.email-subcategory-type {
+  padding-left: var(--generic-gap);
+}
+
 .email-category {
-  padding: 6px;
-  font-weight: bold;
+  padding: 4px;
+  font-weight: 400;
   cursor: default;
   color: #fff;
-  border-radius: var(--soft-radius);
+  border-radius: calc(var(--soft-radius) - 4px);
   font-size: var(--font-size-small);
   background: linear-gradient(11deg, rgba(50, 61, 70) 0%, rgba(45, 108, 158) 100%);
 }
@@ -357,6 +376,10 @@ section {
 
 .email-image:hover > div {
   filter: grayscale(1%);
+}
+
+.email-description > p:first-child {
+  font-weight: 600;
 }
 
 .email-card {
@@ -413,10 +436,10 @@ section {
 .green-tag {
   background: var(--accent-color);
   color: var(--text-primary-light);
-  padding: 5px;
+  padding: 3px;
   font-size: var(--font-size-small);
-  font-weight: bold;
-  border-radius: var(--soft-radius);
+  font-weight: 400;
+  border-radius: calc(var(--soft-radius) - 4px);
   cursor: default;
 }
 
