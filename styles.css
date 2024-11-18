@@ -497,6 +497,14 @@ section {
   border-radius: 0 0 var(--soft-radius) var(--soft-radius);
 }
 
+.underlined-anchor {
+  text-decoration: underline;
+  transition: color 0.2s ease-in-out;
+}
+
+.underlined-anchor:hover {
+  color: var(--primary-color);
+}
 /* ========== Responsive Queries ========== */
 /* =========== Large Screens =========== */
 @media (max-width: 1390px) {
