@@ -44,6 +44,7 @@
 
   /* Typography */
   --font-family-primary: "Inter", sans-serif;
+  --font-size-xsmall: 0.675rem;
   --font-size-small: 0.875rem;
   --font-size-base: 1rem;
   --font-size-large: 1.5rem;
@@ -348,6 +349,7 @@ section {
 .email-category-sub-card > span:first-child {
   font-weight: 600;
 }
+
 .email-subcategory-type {
   padding-left: var(--generic-gap);
 }
@@ -376,6 +378,51 @@ section {
 
 .email-image:hover > div {
   filter: grayscale(1%);
+}
+
+.email-client-cards {
+  border: 1px var(--surface-color) solid;
+  border-radius: var(--soft-radius);
+  padding: var(--soft-padding);
+}
+
+.email-client-cards > p:first-child {
+  font-weight: 600;
+}
+
+.email-client-card-list {
+  border: 1px var(--divider-color) solid;
+  padding: var(--generic-gap);
+  display: flex;
+  row-gap: calc(var(--generic-gap) - 6px);
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.client-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  gap: calc(var(--generic-gap) - 10px);
+  border: 1px var(--surface-color) solid;
+  padding: calc(var(--soft-padding) - 4px);
+}
+
+.client-card-frame{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.client-card-frame img {
+  width: 30px;
+  height: auto;
+}
+
+.client-card p {
+  text-align: center;
+  font-size: var(--font-size-xsmall);
 }
 
 .email-description > p:first-child {
