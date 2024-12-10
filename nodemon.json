@@ -1,8 +1,7 @@
 {
   "watch": [
-    "emails/development/lussonapoli",
-    "local-cms"
+    "emails/development/lussonapoli"
   ],
-  "ext": "mjml, js, json",
-  "exec": "mjml emails/development/lussonapoli/index.mjml -o emails/development/lussonapoli/index.html && node local-cms/server.js"
+  "ext": "mjml",
+  "exec": "mjml emails/development/lussonapoli/index.mjml -o emails/development/lussonapoli/index.html"
 }
