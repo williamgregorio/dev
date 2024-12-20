@@ -2,7 +2,6 @@
   "name": "williamgregorio.github.io",
   "version": "1.0.0",
   "description": "development",
-  "main": "index.js",
   "scripts": {
     "dev-email": "nodemon",
     "serve-local-cms": "http-server -p 8080",
