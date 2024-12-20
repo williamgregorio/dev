@@ -60,7 +60,7 @@
 
   /* Navigation styles */
   --logo-width: 42px;
-  --nav-anchor-weight: 600;
+  --nav-anchor-weight: 700;
   --nav-menu-gap: 16px;
 }
 
@@ -176,6 +176,7 @@ nav > a img {
 
 nav ul > li a {
   font-weight: var(--nav-anchor-weight);
+  text-transform: uppercase;
 }
 
 nav ul li {
