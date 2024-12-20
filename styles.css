@@ -14,6 +14,7 @@
   --bottom-padding: 2em;
   --side-padding-bg: 14em;
   --soft-padding: 8px;
+  --col-padding: 16px;
   --header-gap: 18px;
   --small-gap: 8px;
   --text-gap: 17px;
@@ -32,7 +33,7 @@
   --primary-color: #3f729b;
   --secondary-color: #a9d2d5;
   --accent-color: #065333;
-  --background-color: #f5f5f5;
+  --background-color: #f2f0ef;
   --surface-color: #e4e7e5;
   --divider-color: #eeeeee;
   --overlay-light-color: #ffffff;
@@ -59,7 +60,7 @@
 
   /* Navigation styles */
   --logo-width: 42px;
-  --nav-anchor-weight: 600;
+  --nav-anchor-weight: 700;
   --nav-menu-gap: 16px;
 }
 
@@ -70,6 +71,9 @@ body {
   font-style: normal;
   background-color: rgba(0, 0, 0, 0);
   overflow-x: hidden;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
 }
 
 h1,
@@ -81,9 +85,9 @@ h4 {
 }
 
 h1 {
-  font-size: 3.1em;
-  line-height: 0.9;
-  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 1.28em;
+  font-weight: 700;
 }
 
 h2 {
@@ -141,19 +145,16 @@ button:disabled {
 
 /* ========== Layout Components ========== */
 header {
-  padding-top: var(--top-padding);
-  padding-bottom: var(--bottom-padding);
-  padding-left: var(--side-padding-bg);
-  padding-right: var(--side-padding-bg);
-  transition: background-color 0.2s ease;
+  padding: 12px var(--col-padding);
+  transition: 0.7s ease;
   position: sticky;
   top: 0;
   z-index: 1000;
+  grid-column: 2 / span 10;
 }
 
 main {
-  padding-left: var(--side-padding-bg);
-  padding-right: var(--side-padding-bg);
+  grid-column: 2 / span 10;
 }
 
 /* ========== Navigation Menu Styles ========== */
@@ -175,6 +176,7 @@ nav > a img {
 
 nav ul > li a {
   font-weight: var(--nav-anchor-weight);
+  text-transform: uppercase;
 }
 
 nav ul li {
@@ -246,7 +248,7 @@ section {
   border: 2px var(--surface-color) solid;
   border-radius: 9px 10px 6px 42px;
   padding: 2.5em;
-  justify-content: space-between;
+  justify-content: center;
   gap: var(--about-gap);
 }
 
@@ -255,15 +257,13 @@ section {
   flex-direction: column;
   gap: var(--text-gap);
 }
-
 .about-images img {
-  object-fit: cover;
+  object-fit: contain;
+  width: 70%;
+  height: auto;
   position: absolute;
-  width: 451px;
-  zoom: 251%;
   border-radius: var(--soft-radius);
 }
-
 /* Skills Section */
 #skills {
   display: flex;
@@ -366,14 +366,16 @@ section {
 
 .email-image > div {
   border: 2px var(--surface-color) solid;
-  height: 19rem;
-  background-repeat: no-repeat;
-  background-position: top center;
   box-shadow: var(--soft-box-shadow);
-  background-size: cover;
   border-radius: var(--soft-radius);
   filter: grayscale(98%);
   transition: filter 0.2s ease-in-out;
+  position: relative;
+  width: 100%;
+  padding-top: 158.02%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .email-image:hover > div {
@@ -492,7 +494,6 @@ section {
 
 .scrolled {
   background-color: var(--background-color);
-  border-bottom: 1px #eee solid;
   box-shadow: 0px 4px 15px -16px rgba(0,0,0,0.1);
   border-radius: 0 0 var(--soft-radius) var(--soft-radius);
 }
