@@ -365,14 +365,16 @@ section {
 
 .email-image > div {
   border: 2px var(--surface-color) solid;
-  height: 19rem;
-  background-repeat: no-repeat;
-  background-position: top center;
   box-shadow: var(--soft-box-shadow);
-  background-size: cover;
   border-radius: var(--soft-radius);
   filter: grayscale(98%);
   transition: filter 0.2s ease-in-out;
+  position: relative;
+  width: 100%;
+  padding-top: 158.02%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .email-image:hover > div {
