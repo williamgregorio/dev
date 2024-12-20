@@ -47,7 +47,7 @@
   --font-family-primary: "Inter", sans-serif;
   --font-size-xsmall: 0.675rem;
   --font-size-small: 0.875rem;
-  --font-size-base: 1rem;
+  --font-size-base: 1.25rem;
   --font-size-large: 1.5rem;
 
   /* Button Styles */
@@ -101,7 +101,8 @@ h3 {
 p {
   color: var(--text-secondary);
   font-size: var(--font-size-base);
-  line-height: 1.6;
+  line-height: 1.85em;;
+  font-weight: 350;
 }
 
 /* ========== Links ========== */
@@ -222,10 +223,10 @@ section {
 
 #hero-image img {
   border-radius: var(--soft-radius);
-  transform: rotate(2.5deg);
+  transform: rotate(2.3deg);
   filter: opacity(91%) grayscale(50%) contrast(110%);
   box-shadow: var(--soft-box-shadow);
-  max-width: var(--hero-image-max-width);
+  width: 50%;
   height: auto;
   border: 2px var(--surface-color) solid;
 }
@@ -508,13 +509,6 @@ section {
 }
 /* ========== Responsive Queries ========== */
 /* =========== Large Screens =========== */
-@media (max-width: 1390px) {
-  header,
-  main {
-    padding-left: 2em;
-    padding-right: 2em;
-  }
-}
 
 /* =========== Tablets =========== */
 @media (max-width: 1024px) {
@@ -540,28 +534,25 @@ section {
 
 /* =========== Mobile =========== */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  p {
-    font-size: var(--font-size-small);
-  }
-
   #email-list {
     grid-template-columns: 1fr;
   }
-
   .about-images {
     display: none;
   }
-
+  #skill-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* =========== Mobile Second =========== */
+@media (max-width: 650px) {
+  header, main {
+    grid-column: 1 / span 12;
+  }
+}
+/* =========== Mobile Third =========== */
+@media (max-width: 414px) {
   #skill-list {
     grid-template-columns: 1fr;
   }
 }
-
