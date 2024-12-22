@@ -49,6 +49,17 @@
   --font-size-small: 0.875rem;
   --font-size-base: 1.25rem;
   --font-size-large: 1.5rem;
+  --h1-font-size: clamp(2.5rem, 5vw, 3rem);
+  --h2-font-size: clamp(2rem, 4vw, 2.5rem);
+  --h3-font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+  --h4-font-size: clamp(1.5rem, 3vw, 2rem);
+  --h5-font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  --h6-font-size: clamp(1rem, 2vw, 1.5rem);
+  --h2-line-height: 1.3em;
+  --h3-line-height: 1.4em;
+  --h4-line-height: 1.5em;
+  --h5-line-height: 1.6em;
+  --h6-line-height: 1.7em;
 
   /* Button Styles */
   --button-gradient: linear-gradient(
@@ -67,9 +78,6 @@
 /* ========== Typography ========== */
 body {
   font-family: var(--font-family-primary);
-  font-weight: 400;
-  font-style: normal;
-  background-color: rgba(0, 0, 0, 0);
   overflow-x: hidden;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -85,17 +93,34 @@ h4 {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: var(--h1-font-size);
   line-height: 1.28em;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: var(--h2-font-size);
+  line-height: var(--h2-line-height);
 }
 
 h3 {
-  font-size: var(--font-size-large);
+  font-size: var(--h3-font-size);
+  line-height: var(--h3-line-height);
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+  line-height: var(--h4-line-height);
+}
+
+h5 {
+  font-size: var(--h5-font-size);
+  line-height: var(--h5-line-height);
+}
+
+h6 {
+  font-size: var(--h6-font-size);
+  line-height: var(--h6-line-height);
 }
 
 p {
@@ -177,8 +202,7 @@ nav > a img {
 }
 
 nav ul > li a {
-  font-weight: var(--nav-anchor-weight);
-  text-transform: uppercase;
+  font-weight: 350;
 }
 
 nav ul li {
