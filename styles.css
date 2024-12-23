@@ -374,6 +374,7 @@ section {
   padding-left: var(--generic-gap);
 }
 
+/*
 .email-category {
   padding: 4px;
   font-weight: 400;
@@ -383,6 +384,7 @@ section {
   font-size: var(--font-size-small);
   background: linear-gradient(11deg, rgba(50, 61, 70) 0%, rgba(45, 108, 158) 100%);
 }
+*/
 
 .email-image > div {
   border: 2px var(--surface-color) solid;
