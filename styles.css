@@ -366,7 +366,7 @@ section {
   padding: var(--soft-padding);
 }
 
-.email-category-sub-card > span:first-child {
+.email-category-sub-card > span {
   font-weight: 600;
 }
 
