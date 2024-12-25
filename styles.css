@@ -366,22 +366,12 @@ section {
   padding: var(--soft-padding);
 }
 
-.email-category-sub-card > span:first-child {
+.email-category-sub-card > span {
   font-weight: 600;
 }
 
 .email-subcategory-type {
   padding-left: var(--generic-gap);
-}
-
-.email-category {
-  padding: 4px;
-  font-weight: 400;
-  cursor: default;
-  color: #fff;
-  border-radius: calc(var(--soft-radius) - 4px);
-  font-size: var(--font-size-small);
-  background: linear-gradient(11deg, rgba(50, 61, 70) 0%, rgba(45, 108, 158) 100%);
 }
 
 .email-image > div {
@@ -506,7 +496,6 @@ section {
   background: var(--accent-color);
   color: var(--text-primary-light);
   padding: 3px;
-  font-size: var(--font-size-small);
   font-weight: 400;
   border-radius: calc(var(--soft-radius) - 4px);
   cursor: default;
@@ -528,6 +517,11 @@ section {
 }
 /* ========== Responsive Queries ========== */
 /* =========== Large Screens =========== */
+@media (max-width: 1600px) {
+  #email-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 /* =========== Tablets =========== */
 @media (max-width: 1024px) {
@@ -541,11 +535,6 @@ section {
     grid-template-columns: 1fr;
     text-align: center;
   }
-
-  #email-list {
-    grid-template-columns: 1fr 1fr;
-  }
-
   #about {
     grid-template-columns: 1fr;
   }

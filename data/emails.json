@@ -2,7 +2,7 @@
   {
     "title": "Katz Gluten Free",
     "category": "promotional",
-    "subject": "test subject",
+    "subject": "Say Hello To The New Chocolate Chip Toaster Pastry!",
     "emailTypeIndex": 0,
     "emailType": "Product announcements",
     "description": "This is a product announcement email for a gluten free bakery online e-commerce store, written with raw HTML tables, or around 195 lines of code, with a final delivery time of 1 hour and 14 minutes. It encourages customers to try it and shop now, if that didn't work it also recommends other products to make sure customers can at least visit the store.",
@@ -12,7 +12,7 @@
   {
     "title": "Stripe",
     "category": "transactional",
-    "subject": "test subject",
+    "subject": "Payment of $7,000.00 from Business A for Bob's Services LLC",
     "emailTypeIndex": 4,
     "emailType": "Payment receipt",
     "description": "This is Stripe's first transaction email that is sent out to new business owners, written with raw HTML tables, around 174 lines of code, that took around 1 hour and 23 minutes. While not a production level email, it shows the power, a framework like MJML4 can have in time reduction.",
@@ -22,7 +22,7 @@
   {
     "title": "Instacart",
     "category": "promotional",
-    "subject": "test subject",
+    "subject": "Last chance to save $60 off your next orders.",
     "typeIndex": 1,
     "emailType": "Product announcements",
     "description": "Known as Maplebear Inc. or DBA Instacart, that operates grocery delivery services, written with MJML4 and tested with Litmus, for a discount promotional campaign, and additional call to actions for increase in customer website traffic.",
@@ -32,7 +32,7 @@
   {
     "title": "Spectrum",
     "category": "promotional",
-    "subject": "test subject",
+    "subject": "Get faster and safer connection with our new WiFi 6 Router!",
     "typeIndex": 0,
     "emailType": "Product announcements",
     "description": "Inspired by the new release of the WiFi 6 Router by Spectrum. I designed it with Figma than wrote it with MJML4 for faster development time, giving the email strong support for major email clients like Outlook.",
@@ -42,7 +42,7 @@
   {
     "title": "Lusso Napoli",
     "category": "behavioral",
-    "subject": "test subject",
+    "subject": "Just checking in on you, you left these in your cart, want 20% off and free shipping on this order?",
     "typeIndex": 0,
     "emailType": "Abondened cart",
     "description": "An abandoned cart email used for high end bespoke dress shoes online store. Designed with Figma and written in MJML4 with support with major email clients, it's also spam compliant and makes customer feel special.",
