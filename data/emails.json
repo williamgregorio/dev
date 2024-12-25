@@ -52,11 +52,11 @@
   {
     "title": "Printinium",
     "category": "transactional",
-    "subject": "Your Printinium order #129128478 is confirmed",
+    "subject": "Printinium order #129128478 was confirmed",
     "typeIndex": 0,
     "emailType": "Order confirmation",
     "description": "",
-    "imageFileName": "printinium-order-confirmed_rough.png",
+    "imageFileName": "printinium-order-confirmation.png",
     "viewOnlineFileName": "lussonapoli-behavioral-abandoned-cart.html"
   }
 ]
