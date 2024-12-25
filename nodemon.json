@@ -3,6 +3,6 @@
     "emails/development/printinium",
     "local-cms"
   ],
-  "ext": "mjml, js, json",
-  "exec": "mjml emails/development/printinium/index.mjml -o emails/development/printinium/index.html && node local-cms/server.js"
+  "ext": "mjml",
+  "exec": "mjml emails/development/printinium/index.mjml -o emails/development/printinium/index.html"
 }
