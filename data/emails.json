@@ -48,5 +48,15 @@
     "description": "An abandoned cart email used for high end bespoke dress shoes online store. Designed with Figma and written in MJML4 with support with major email clients, it's also spam compliant and makes customer feel special.",
     "imageFileName": "lussonapoli-beh-aban-cart.png",
     "viewOnlineFileName": "lussonapoli-behavioral-abandoned-cart.html"
+  },
+  {
+    "title": "Printinium",
+    "category": "transactional",
+    "subject": "Your Printinium order #129128478 is confirmed",
+    "typeIndex": 0,
+    "emailType": "Order confirmation",
+    "description": "",
+    "imageFileName": "printinium-order-confirmed_rough.png",
+    "viewOnlineFileName": "lussonapoli-behavioral-abandoned-cart.html"
   }
 ]
