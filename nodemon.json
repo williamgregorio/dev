@@ -1,7 +1,8 @@
 {
   "watch": [
-    "emails/development/lussonapoli"
+    "emails/development/printinium",
+    "local-cms"
   ],
   "ext": "mjml",
-  "exec": "mjml emails/development/lussonapoli/index.mjml -o emails/development/lussonapoli/index.html"
+  "exec": "mjml emails/development/printinium/index.mjml -o emails/development/printinium/index.html"
 }

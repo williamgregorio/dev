@@ -8,3 +8,13 @@
 - express
 - http-server
 
+
+## Create a new project or change to another project.
+```bash
+node projectManager.js
+```
+
+## Send email project to production directory.
+```bash
+node workflow.js
+```
