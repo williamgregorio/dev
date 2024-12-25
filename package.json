@@ -4,8 +4,8 @@
   "description": "development",
   "scripts": {
     "dev-email": "nodemon",
-    "serve-local-cms": "http-server -p 8080",
-    "start": "concurrently \"npm run dev-email\" \"npm run serve-local-cms\""
+    "local-host": "http-server -p 8080",
+    "start": "concurrently \"npm run dev-email\" \"npm run local-host\""
   },
   "author": "William Gregorio",
   "license": "MIT",
