@@ -1,10 +1,151 @@
 <mjml>
   <mj-head>
     <mj-title>
-      
-     </mj-title>
+    Try Out The New Chocolate Chip Toaster Pastry
+    </mj-title>
+    <mj-font name="Inter"
+       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" />
+    <mj-attributes>
+     <mj-section padding="0" background-color="#FAF8F8"></mj-section> 
+     <mj-image padding="0"  />
+     <mj-column></mj-column>
+     <mj-text padding="0"></mj-text>
+     <mj-all font-family="Inter"/>
+    <mj-class name="new-headline" css-class="new-headline" font-weight="900" color="#AC212D" font-size="80px"/>
+    <mj-class name="product-name-headline" css-class="product-name-headline" line-height="1.5" font-size="27px" color="#805043" font-weight="800"/>
+    <mj-divider padding="0" border-color="#CFAF42" />
+    <mj-class name="shop-now-btn" background-color="#CFAF42" font-size="40px" color="#3A2211" font-weight="800" border-radius="8px"/>
+    <mj-class name="shop-now-price" background-color="#AC212D" font-size="40px" color="#FFFFFF" font-weight="400" font-style="italic" border-radius="8px"/>
+
+    <mj-class name="heading" font-size="32px" color="#3A2211" font-weight="800"/>
+    <mj-class name="body" font-size="20px" color="#292828" font-weight="300" line-height="1.5"/>
+    </mj-attributes>
+
+    <mj-style>
+      .mj-car-img tbody td{
+        padding: 6px !important;
+      }
+
+      @media (max-width:480px) { 
+       .new-headline div {
+        font-size: 48px !important;
+      }
+
+      @media (max-width:480px) {
+        .product-name-headline div{
+          font-size: 18px !important;
+        }
+      }
+    </mj-style>
+
+    <mj-raw>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    </mj-raw>
    </mj-head>
    <mj-body>
+   <mj-section>
+    <mj-column width="484px">
+    <mj-spacer height="40px" />
+      <mj-image src="assets/katz-logo.png" width="120px" align="left" alt="katz-logo" />
+      <mj-spacer height="20px" />
+    </mj-column> 
+
+    <mj-group width="484px">
+      <mj-column width="45%" padding="0">
+        <mj-text mj-class="new-headline">
+          NEW!
+        </mj-text>
+      </mj-column>
+      <mj-column width="55%" padding="0">
+      <mj-text mj-class="product-name-headline">
+        CHOCOLATE CHIP TOASTER PASTRIES
+      </mj-text>
+      </mj-column>
+    </mj-group>
+
+    <mj-column width="484px">
+      <mj-spacer height="20px" />
+      <mj-divider />
+      <mj-spacer height="20px" />
+     </mj-column>
+   </mj-section>
+
+   <mj-section>
+     <mj-column width="484px">
+     <mj-spacer height="20px" />
+      <mj-carousel css-class="mj-car-img" padding="20px" left-icon="assets/katz-left-icon.png" right-icon="assets/katz-right-icon.png" thumbnails="hidden" icon-width="20px">
+        <mj-carousel-image src="assets/katz-product-box.png" />
+        <mj-carousel-image src="assets/katz-visual-choc.png" />
+        <mj-carousel-image src="assets/katz-visual-two-choc.png" />
+      </mj-carousel>
+     </mj-column>
+
+     <mj-column width="484px">
+      <mj-button mj-class="shop-now-btn" href="http://williamgregorio.com" target="">
+      SHOP NOW
+      </mj-button>
+     </mj-column>
+   </mj-section>
+
+   <mj-section>
+     <mj-column width="484px">
+     <mj-spacer height="20px" />
+      <mj-text mj-class="heading" align="center">
+        Find a spot to hide this!
+      </mj-text>
+     <mj-spacer height="20px" />
+     <mj-text mj-class="body" align="center">
+      Look at this gooey, chocolatey, and melt-in-the-mouth toaster pastry. These are the ones you hide from friends and family.
+     </mj-text>
+     <mj-spacer height="20px" />
+     </mj-column>
+     <mj-column width="484px">
+      <mj-image src="assets/katz-plate-choc.png" alt="chocolate chip toaster on a plate" />
+      <mj-spacer height="10px" />
+     </mj-column>
+
+     <mj-group width="484px">
+      <mj-column padding="0" with="20%">
+        <mj-button mj-class="shop-now-price" padding="0" width="100%">
+          $5.99
+        </mj-button>
+      </mj-column>
+      <mj-column width="5%">
+      </mj-column>
+      <mj-column padding="0" width="60%">
+        <mj-button mj-class="shop-now-btn" padding="0" width="100%" href="https://williamgregorio.com" target="_blank">
+          TRY OUT
+        </mj-button>
+        <mj-spacer height="20px" />
+      </mj-column>
+     </mj-group>
+
+     <mj-column width="484px">
+      <mj-divider />
+      <mj-spacer height="20px" />
+     </mj-column>
+   </mj-section>
+
+    <mj-section padding="0px">
+      <mj-column>
+        <mj-text mj-class="footer-text" align="center" padding="0 10px">
+          <p style="Margin:0; padding-bottom:10px; font-size:10px; line-height:15px; Margin-bottom:10px; color:#111111; font-family: 'Open Sans', 'Raleway', Arial, Helvetica, sans-serif;">
+            <span style="color:#111111 !important; text-decoration:none;">
+              <strong>1.888.832.8235</strong>
+              <br /> Katz Gluten Free 19 Industry Drive Mountainville, NY 10953
+            </span>
+            <br />
+            <a href="http://williamgregorio.com/" name="footer_privacy" style="color:#111111; text-decoration:underline;">
+              <strong>Privacy Policy</strong>
+            </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="http://williamgregorio.com/" style="text-decoration:underline; color:#111111;">
+              <strong>Unsubscribe</strong>
+            </a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="https://williamgregorio.com" style="text-decoration:underline; color:#111111;">View in Browser</a>
+          </p>
+        </mj-text>
+      </mj-column>
+    </mj-section>
 
    </mj-body>
 </mjml>
