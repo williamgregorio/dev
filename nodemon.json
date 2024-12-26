@@ -1,8 +1,8 @@
 {
   "watch": [
-    "emails/development/printinium",
+    "emails/development/katz",
     "local-cms"
   ],
   "ext": "mjml",
-  "exec": "mjml emails/development/printinium/index.mjml -o emails/development/printinium/index.html"
+  "exec": "mjml emails/development/katz/index.mjml -o emails/development/katz/index.html"
 }
