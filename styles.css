@@ -691,3 +691,14 @@ section {
     grid-column: 1 / span 12;
   }
 }
+/* =========== Mobile Third =========== */
+@media (max-width: 415px) {
+  .green-tag {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .green-tag-icon img {
+    width: 100px;
+  }
+}
